@@ -39,7 +39,7 @@
           <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Internship</a>
           <a class="btn btn-outline-secondary px-4" href="#home" role="button">Own projects</a>
           <a class="btn btn-outline-secondary px-4"
-            href="https://docs.google.com/document/d/1eM4zVVEwYZUVZ6QyPZVVv_qylaHa8RrE2FjnT9hRLgk/edit#heading=h.y7d3xdxnr44m"
+            href="CVDamienLopvet2022.pdf"
             target="_blank" role="button">CV</a>
 
         </div>
@@ -405,14 +405,8 @@
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">My own projects </a></li>
         <li class="nav-item"><a href="#work" class="nav-link px-2 text-muted">Internship</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal"
-            data-bs-target="#contactFormModal">
-            Contact-me
-          </a></li>
-        <li class="nav-item"><a
-            href="https://docs.google.com/document/d/1eM4zVVEwYZUVZ6QyPZVVv_qylaHa8RrE2FjnT9hRLgk/edit#heading=h.y7d3xdxnr44m"
-            target="_blank" class="nav-link px-2 text-muted">My CV</a></li>
-
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#contactFormModal">Contact-me</a></li>
+        <li class="nav-item"><a href="CVDamienLopvet2022.pdf" target="_blank" class="nav-link px-2 text-muted">My CV</a></li>
       </ul>
       <p class="text-center text-muted">{{date}} etwincorp © </p>
     </footer>
