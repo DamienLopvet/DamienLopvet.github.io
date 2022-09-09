@@ -16,6 +16,7 @@ export default {
 <style>
 html, body{
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

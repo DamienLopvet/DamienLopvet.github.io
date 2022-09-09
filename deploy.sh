@@ -16,5 +16,8 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f https://github.com/DamienLopvet/DamienLopvet.github.io.git main:gh-pages
+git push -f https://github.com/DamienLopvet/DamienLopvet.github.io.git master:gh-pages
 cd -
+git add .
+git commit -m'automatic update '
+git push
