@@ -54,7 +54,7 @@
   <div>
     <div id="home" class="d-flex flex-column flex-wrap align-items-center">
       <div class="scroll-tracker"></div>
-      <h2 class="sticky-top section-title w-100 py-2">Own projects</h2>
+      <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">Own projects</h2>
       <!--  SINGLE STOPWATCH -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5 ">
@@ -249,7 +249,7 @@
       </div>
   </div>  
     <div>
-      <h2 class="sticky-top section-title w-100 py-2" id="work">Internship</h2>
+      <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="work">Internship</h2>
       <!-- JHG LIGHTBOXES -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
@@ -526,6 +526,20 @@
 
         }
         )
+      },
+      styleTitle(){
+        const work = document.querySelector("#work")
+        const workObserver = new IntersectionObserver( 
+           ([e]) => e.target.classList.toggle("shadow", e.intersectionRatio < 1),
+            { threshold: [1] }
+            );
+        workObserver.observe(work);
+        const own = document.querySelector("#own")
+        const ownObserver = new IntersectionObserver( 
+           ([e]) => e.target.classList.toggle("shadow", e.intersectionRatio < 1),
+            { threshold: [1] }
+            );
+        ownObserver.observe(own);
       }
     },
     created() {
@@ -533,7 +547,8 @@
       this.getDate();
     },
     mounted() {
-      this.scrollTracking()
+      this.scrollTracking();
+      this.styleTitle()
     },
     unmounted() {
       window.removeEventListener('scroll', this.handleScroll);
@@ -567,18 +582,12 @@
 
   .card {
     min-width: 250px;
-    transition: all 100ms;
     outline-style: solid;
     outline-color: #0000003d;
     outline-width: 1px;
-  }
-
-  .card:hover {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
-    transform: translateY(-5px);
-    transition: all 100ms;
-  }
 
+  }
   .nav-link:hover {
     color: #abb4bb !important
   }
@@ -661,7 +670,9 @@ border-bottom-right-radius: 12rem;
     transition: all 400ms;
   }
   .section-title{
-    background-color: #ffffffb8;
+    background-color: #fffffff3;
+    top:-1px;
+    transition: box-shadow 500ms;
   }
 
   /* RESPONSIVE */
