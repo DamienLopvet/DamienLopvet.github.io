@@ -4,9 +4,9 @@
   <!-- HERO SECTION -->
   <div class="container col-xxl-8  py-5 overflow-hidden" id="top">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-lg-6 mx-auto">
+      <div class="col-10 col-lg-6 mx-auto heroimg-container">
         <img src="../assets/hero-color.webp" width="532" windowsheight="357"
-          class="heroimg  rounded d-block mx-auto img-fluid" alt="hero image">
+          class="heroimg d-block mx-auto img-fluid" alt="hero image">
       </div>
       <div class="col-lg-6 text-lg-start mt-3 mt-sm-5">
         <div class="lc-block mb-3">
@@ -615,6 +615,29 @@
   }
 
   /* ANIMATIONS */
+  .heroimg-container{
+    height:400px;
+  }
+  @media screen and (min-width: 573px){
+  .heroimg:hover{
+    border-radius: 25rem;
+transition: all 300ms;
+width: 25rem;
+height: 25rem;
+aspect-ratio: 1/1;
+
+  }}
+  .heroimg{
+    border-top-left-radius: 5px;
+width: 18rem;
+-o-object-fit: cover;
+object-fit: cover;
+transition: all 300ms;
+height: 25rem;
+border-top-right-radius: 12rem;
+border-bottom-right-radius: 12rem;
+
+  }
   .v-enter-active,
   .v-leave-active {
     transition: opacity 0.5s ease;
@@ -642,7 +665,17 @@
   }
 
   /* RESPONSIVE */
+ 
   @media (max-width: 575px) {
+    .heroimg-container{
+    height:250px;
+  }
+  .heroimg{
+    border-radius: 25rem;
+width: 15rem;
+height: 15rem;
+
+  }
     .logo {
       width: 50px
     }
