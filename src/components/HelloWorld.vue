@@ -692,7 +692,12 @@ border-bottom-right-radius: 12rem;
     top:-1px;
     transition: box-shadow 500ms;
   }
-
+#home{
+  z-index: 1020;
+}
+#work{
+  z-index: 1000;
+}
   /* RESPONSIVE */
  
   @media (max-width: 575px) {
