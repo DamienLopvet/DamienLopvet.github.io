@@ -259,8 +259,8 @@
           <div class="card-body">
             <h2 class="card-title">Lightboxes</h2>
             <p class="card-text">This Lightbox feature I built with Js is useful on the <a
-                href="https://jhmediagroup.com/" target="_blank">homePage</a> and the <a
-                href="https://jhmediagroup.com/company/" target="_blank">company</a> page
+                href="https://jhmediagroup.com/" target="_blank" class="link text-primary">homePage</a> and the <a
+                href="https://jhmediagroup.com/company/" target="_blank" class="link text-primary">company</a> page
               of <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">jhMediaGroup</a> </p>
             <hr>
             <p class="card-text text-info">Wordpress - Divi - Vanilla JS<br /> Pure CSS/HTML</p>
