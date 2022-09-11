@@ -58,7 +58,7 @@
       <!--  SINGLE STOPWATCH -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5 ">
-        <div class=" card m-3 my-3  border-4 border-white " style="width: 25rem;">
+        <div class=" card-left card  m-3 my-3  border-4 border-white " style="width: 25rem;">
           <img src="..\assets\singleStopWatch.webp" width="100%" alt="single-stopwatche-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -94,7 +94,7 @@
             <a href="https://github.com/DamienLopvet/multiple-chrono-backend" target="_blank" class="link text-primary"> look</a> at it!!
           </p>
         </div>
-        <div class="card m-3 my-3  border-4 border-white" style="width: 25rem;">
+        <div class="card-right card  m-3 my-3  border-4 border-white" style="width: 25rem;">
           <img src="..\assets\multiple-chronos.webp" width="100%" loading="lazy" alt="multiple-stopwatches-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -114,7 +114,7 @@
       <!-- YOU FEED -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
-        <div class="card m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
+        <div class="card-left card  m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
           <img src="..\assets\Youfeed.webp" width="100%" loading="lazy" alt="you-feed-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -162,7 +162,7 @@
             content, comments and more...
           </p>
         </div>
-        <div class="card m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
+        <div class="card-right card  m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
           <img src="..\assets\Groupomania.webp" width="100%" loading="lazy" alt="groupomania-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -187,7 +187,7 @@
       <!-- HOT SAUCES -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
-        <div class="card m-3 my-3  border-4 border-white" style="width: 25rem;">
+        <div class="card-left card  m-3 my-3  border-4 border-white" style="width: 25rem;">
           <img src="..\assets\hotTakes.webp" alt="Hot-sauce-screenshot" width="100%" loading="lazy"
             class="rounded  border border-primary">
           <div class="card-body">
@@ -228,7 +228,7 @@
               href="https://sass-lang.com/" target="_blank" class="link text-primary"> SASS</a>. Very exciting!!
           </p>
         </div>
-        <div class="card m-3 my-3  border-4 border-white" style="width: 25rem;">
+        <div class="card-right card  m-3 my-3  border-4 border-white" style="width: 25rem;">
           <img src="..\assets\Ohmyfood.webp" alt="oh-my-food-screenshot" width="100%" loading="lazy"
             class="rounded  border border-primary ">
           <div class="card-body">
@@ -253,7 +253,7 @@
       <!-- JHG LIGHTBOXES -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
-        <div class="m-3 card my-3 -lg border-4 border-white " style="width: 25rem;">
+        <div class="card-left card  m-3 my-3 -lg border-4 border-white " style="width: 25rem;">
           <img src="..\assets\jhMediaGroup.webp" width="100%" alt="lightbox-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -289,7 +289,7 @@
             "defer" or "async" the Js scripts on the DIVI integration section.
           </p>
         </div>
-        <div class="m-3 card -lg border-4 border-white " style="width: 25rem;">
+        <div class="m-3 card-right card  border-4 border-white " style="width: 25rem;">
           <img src="..\assets\jhGperf.webp" width="100%" loading="lazy" alt="perfomances-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -308,7 +308,7 @@
       <!-- ACCESSIBILIY -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
-        <div class="m-3 card my-3 -lg border-4 border-white " style="width: 25rem;">
+        <div class="m-3 card-left card  my-3 -lg border-4 border-white " style="width: 25rem;">
           <img src="..\assets\jhgAccessibility.webp" width="100%" loading="lazy" alt="accessibility-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -342,7 +342,7 @@
             <br />It was great to work on ticketing using the confluence suite as well.
           </p>
         </div>
-        <div class="m-3 card -lg border-4 border-white " style="width: 25rem;">
+        <div class="m-3 card-right card  -lg border-4 border-white " style="width: 25rem;">
           <img src="..\assets\tempTracker.webp" width="100%" loading="lazy" alt="temptracker-screenshot"
             class="rounded border border-primary">
           <div class="card-body">
@@ -414,7 +414,7 @@
 </template>
 
 <script>
-  import axios from 'axios';
+import axios from 'axios';
 
 
   export default {
@@ -529,7 +529,7 @@
       },
       styleTitle(){
         const sectionTitles = document.querySelectorAll(".section-title")
-        const observer = new IntersectionObserver( 
+        const titleObserver = new IntersectionObserver( 
            entries => {
             entries.forEach(entry=>{
               entry.target.classList.toggle("shadow", !entry.isIntersecting)
@@ -540,9 +540,27 @@
           }
         )
         sectionTitles.forEach(sectionTitle=>{
-          observer.observe(sectionTitle);
+          titleObserver.observe(sectionTitle);
         })
 
+    },
+    animateCards(){
+       const cards = document.querySelectorAll('.card');
+        const cardObserver = new IntersectionObserver(
+          entries =>{
+            entries.forEach(entry=>{
+              if(!entry.isIntersecting)return
+              entry.target.classList.toggle("show", entry.isIntersecting);
+              
+            })
+          },{
+            threshold:0.3
+          }
+        )
+        cards.forEach(card=>{
+          cardObserver.observe(card)
+        })
+        
     }
   },
     created() {
@@ -551,7 +569,8 @@
     },
     mounted() {
       this.scrollTracking();
-      this.styleTitle()
+      this.styleTitle();
+      this.animateCards()
     },
     unmounted() {
       window.removeEventListener('scroll', this.handleScroll);
@@ -608,7 +627,7 @@
     text-decoration: none;
     color: #2c3e50;
     position: relative;
-    transition: color 400ms;
+    transition: color 600ms;
   }
 .link:after{
   content: "";
@@ -619,7 +638,7 @@
     right: 0;
     right:0;
     bottom:0;
-    transition: width 300ms
+    transition: width 300ms;
 }
   .link:hover {
     color: #0d6efd;
@@ -642,18 +661,36 @@
   }
 
   /* ANIMATIONS */
+  .container{
+    overflow: hidden;
+  }
   .heroimg-container{
     height:400px;
   }
-  @media screen and (min-width: 573px){
+  @media screen and (min-width: 576px){
   .heroimg:hover{
     border-radius: 25rem;
 transition: all 300ms;
 width: 25rem;
 height: 25rem;
 aspect-ratio: 1/1;
+  }
+  .card-left{
+    translate:-300px;
+    opacity: 0;
+    transition:all 400ms ease-in-out;
+  }
+  .card-right{
+    translate:300px;
+    opacity: 0;
+    transition:all 400ms ease-in-out;
+  }
 
-  }}
+  .show{
+    translate:0;
+    opacity:1;
+  }
+}
   .heroimg{
     border-top-left-radius: 5px;
 width: 18rem;
