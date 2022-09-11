@@ -20,14 +20,14 @@
         <div class="lc-block mb-3">
           <div editable="rich">
             <p class="lead">
-              Mail: <a href="mailto:etwincorp@gmail.com" class="hero-link">etwincorp@gmail.com</a>
+              Mail: <a href="mailto:etwincorp@gmail.com" class="link">etwincorp@gmail.com</a>
               <br />
-              Tel: <a href="tel:+33-6-52-51-68-28 " class="hero-link">+33 6.52.51.68.28 </a>
+              Tel: <a href="tel:+41-78-251-95-80 " class="link">+41.78.251.95.80 </a>
               <br />
               Location: Geneva
               <br />
               linkedIn : <a href="https://www.linkedin.com/in/damien-lopvet-019064236/" target="_blank"
-                class="hero-link">Damien Lopvet</a>
+                class="link">Damien Lopvet</a>
             </p>
             <p class="lead">From Backend to Frontend, I loved to manage all of the projects I have been challenged with.
               And when I come home I'm excited to work on my own projects !!
@@ -91,7 +91,7 @@
             challenged myself to make an app with multiple stopwatches. For the moment I'm using only the local storage to
             store the data but I'm working on an API that will allow us to login and retrieve the current stopwatch's
             state on multiple devices. This API is almost done and you should have a
-            <a href="https://github.com/DamienLopvet/multiple-chrono-backend" target="_blank"> look</a> at it!!
+            <a href="https://github.com/DamienLopvet/multiple-chrono-backend" target="_blank" class="link text-primary"> look</a> at it!!
           </p>
         </div>
         <div class="card m-3 my-3  border-4 border-white" style="width: 25rem;">
@@ -153,9 +153,9 @@
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Groupomania </h3>
           <p>This is the big Project of the training I did at <a href="https://openclassrooms.com/fr/"
-              target="_blank">Openclassrooms</a>. The project was to create an internal social network for the Groupomania
+              target="_blank" class="link text-primary">Openclassrooms</a>. The project was to create an internal social network for the Groupomania
             Company.
-            I first made the API that I documented with <a href="https://swagger.io/" target="_blank">Swagger.io</a> and
+            I first made the API that I documented with <a href="https://swagger.io/" target="_blank" class="link text-primary">Swagger.io</a> and
             then I created the frontend.
             <br />I was free to choose the framework to build the frontend so I challenged myself with React!
             The app includes different features: authorization levels, modification of profiles, several MIME types of
@@ -225,7 +225,7 @@
             make the UX dynamic.
             This was the occasion in wich I had to dive into key-frames and CSS tricks...
             <br />The project was also about building highly maintainable code using SCSS with <a
-              href="https://sass-lang.com/" target="_blank"> SASS</a>. Very exciting!!
+              href="https://sass-lang.com/" target="_blank" class="link text-primary"> SASS</a>. Very exciting!!
           </p>
         </div>
         <div class="card m-3 my-3  border-4 border-white" style="width: 25rem;">
@@ -261,7 +261,7 @@
             <p class="card-text">This Lightbox feature I built with Js is useful on the <a
                 href="https://jhmediagroup.com/" target="_blank">homePage</a> and the <a
                 href="https://jhmediagroup.com/company/" target="_blank">company</a> page
-              of <a href="https://jhmediagroup.com/" target="_blank">jhMediaGroup</a> </p>
+              of <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">jhMediaGroup</a> </p>
             <hr>
             <p class="card-text text-info">Wordpress - Divi - Vanilla JS<br /> Pure CSS/HTML</p>
             <div class="d-flex flex-column">
@@ -271,7 +271,7 @@
         </div>
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Lightboxes</h3>
-          <p>During my internship at <a href="https://jhmediagroup.com/" target="_blank">jhMediaGroup</a> I was asked to
+          <p>During my internship at <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">jhMediaGroup</a> I was asked to
             create a
             Lightbox feature on the company's website. I found it fun and rewarding to contribute with my new skills !!
           </p>
@@ -282,10 +282,10 @@
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Performances</h3>
-          <p>During my internship at <a href="https://jhmediagroup.com/" target="_blank">jhMediaGroup</a> we needed to
+          <p>During my internship at <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">jhMediaGroup</a> we needed to
             optimize
             the Performances of the company's website. I used <a href="https://wordpress.org/plugins/w3-total-cache/"
-              target="_blank">W3 total cache</a>, and lazy-load images. I set up the optimization options in DIVI and I
+              target="_blank" class="link text-primary">W3 total cache</a>, and lazy-load images. I set up the optimization options in DIVI and I
             "defer" or "async" the Js scripts on the DIVI integration section.
           </p>
         </div>
@@ -295,7 +295,7 @@
           <div class="card-body">
             <h2 class="card-title">Performances</h2>
             <p class="card-text">Increasing the performances of a <a href="https://jhmediagroup.com/"
-                target="_blank">website</a> can be tricky, fortunately plugins and Js knowledge are helpful </p>
+                target="_blank" class="link text-primary">website</a> can be tricky, fortunately plugins and Js knowledge are helpful </p>
             <hr>
             <p class="card-text text-info">Wordpress - Divi <br />Vanilla JS</p>
             <div class="d-flex flex-column">
@@ -324,10 +324,10 @@
         </div>
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Accessibility</h3>
-          <p>This <a href="https://jhmediagroup.com/" target="_blank">website</a> needed to respect the
+          <p>This <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">website</a> needed to respect the
             American Ada compliance around rules of accessibilities.
             As it was a Wordpress site, I needed to implement some labels dynamicly with Js in the <a
-              href="https://jhmediagroup.com/contact-us/" target="_blank">contact us</a> form.<br /> Powerfull Js !!
+              href="https://jhmediagroup.com/contact-us/" target="_blank" class="link text-primary">contact us</a> form.<br /> Powerfull Js !!
           </p>
         </div>
       </div>
@@ -336,7 +336,7 @@
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5 ">
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Temptracker</h3>
-          <p>The best part of my internship at <a href="https://jhmediagroup.com/" target="_blank">jhMediaGroup</a>
+          <p>The best part of my internship at <a href="https://jhmediagroup.com/" target="_blank" class="link text-primary">jhMediaGroup</a>
             was to work on a temperature tracking app scaled for large companies!!
             I learned a lot working both on backend and frontend on this big app that can handle a huge amount of data.
             <br />It was great to work on ticketing using the confluence suite as well.
@@ -528,20 +528,23 @@
         )
       },
       styleTitle(){
-        const work = document.querySelector("#work")
-        const workObserver = new IntersectionObserver( 
-           ([e]) => e.target.classList.toggle("shadow", e.intersectionRatio < 1),
-            { threshold: [1] }
-            );
-        workObserver.observe(work);
-        const own = document.querySelector("#own")
-        const ownObserver = new IntersectionObserver( 
-           ([e]) => e.target.classList.toggle("shadow", e.intersectionRatio < 1),
-            { threshold: [1] }
-            );
-        ownObserver.observe(own);
-      }
-    },
+        const sectionTitles = document.querySelectorAll(".section-title")
+        const observer = new IntersectionObserver( 
+           entries => {
+            entries.forEach(entry=>{
+              entry.target.classList.toggle("shadow", !entry.isIntersecting)
+            })
+          },
+          {
+             threshold: 1 
+          }
+        )
+        sectionTitles.forEach(sectionTitle=>{
+          observer.observe(sectionTitle);
+        })
+
+    }
+  },
     created() {
       window.addEventListener('scroll', this.handleScroll);
       this.getDate();
@@ -601,14 +604,29 @@
     z-index: 1040;
   }
 
-  .hero-link {
+  .link {
     text-decoration: none;
     color: #2c3e50;
+    position: relative;
+    transition: color 400ms;
   }
-
-  .hero-link:hover {
+.link:after{
+  content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #0d6efd;
+    right: 0;
+    right:0;
+    bottom:0;
+    transition: width 300ms
+}
+  .link:hover {
     color: #0d6efd;
-    text-decoration: underline;
+  }
+  .link:hover:after {
+    width:100%;
+    left:0;
   }
 
   .back-to-top {
