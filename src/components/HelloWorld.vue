@@ -553,9 +553,7 @@ import axios from 'axios';
               entry.target.classList.toggle("show", entry.isIntersecting);
               
             })
-          },{
-            threshold:0
-          }
+          },{}
         )
         cards.forEach(card=>{
           cardObserver.observe(card)
