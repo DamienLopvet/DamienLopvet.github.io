@@ -314,7 +314,7 @@
           <div class="card-body">
             <h2 class="card-title">Accessibility</h2>
             <p class="card-text">As we refreshed the company's website we needed to make some changes to fit the <a
-                href="https://www.ada.gov/" target="_blank">Ada Compliance</a> requirements</p>
+                href="https://www.ada.gov/" target="_blank" class="link text-primary">Ada Compliance</a> requirements</p>
             <hr>
             <p class="card-text text-info">Wordpress - Divi - Vanilla JS - Wave<br /> Pure CSS/HTML</p>
             <div class="d-flex flex-column">
