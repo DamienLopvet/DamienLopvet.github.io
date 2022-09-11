@@ -554,7 +554,7 @@ import axios from 'axios';
               
             })
           },{
-            threshold:0.3
+            threshold:0
           }
         )
         cards.forEach(card=>{
