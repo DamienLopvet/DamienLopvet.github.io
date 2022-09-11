@@ -251,7 +251,7 @@
     <div>
       <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="work">Internship</h2>
       <!-- JHG LIGHTBOXES -->
-      <div
+      <div id="intern"
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="card-left card  m-3 my-3 -lg border-4 border-white " style="width: 25rem;">
           <img src="..\assets\jhMediaGroup.webp" width="100%" alt="lightbox-screenshot"
@@ -404,7 +404,7 @@
     <footer class="py-3 mt-4 bg-dark">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">My own projects </a></li>
-        <li class="nav-item"><a href="#work" class="nav-link px-2 text-muted">Internship</a></li>
+        <li class="nav-item"><a href="#intern" class="nav-link px-2 text-muted">Internship</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#contactFormModal">Contact-me</a></li>
         <li class="nav-item"><a href="CVDamienLopvet2022.pdf" target="_blank" class="nav-link px-2 text-muted">My CV</a></li>
       </ul>
