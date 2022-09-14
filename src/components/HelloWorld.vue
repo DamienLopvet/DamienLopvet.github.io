@@ -608,6 +608,37 @@ import axios from 'axios';
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
 
   }
+  .card-left:after{
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #0000001c;
+    position: absolute;
+    transition: width 500ms;
+    right: 0;
+    pointer-events: none;
+  }
+  .card-left:hover:after{
+    width: 100%;
+    right:unset;
+    left: 0;
+  }
+  .card-right:after{
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #0000001c;
+    position: absolute;
+    transition: width 500ms;
+    left: 0;
+    pointer-events: none;
+  }
+  .card-right:hover:after{
+    width: 100%;
+    left:unset;
+    right:0
+  }
+
   .nav-link:hover {
     color: #abb4bb !important
   }
