@@ -88,9 +88,8 @@
         <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
           <h3 class="mb-3">Mutliple Stopwatches </h3>
           <p>At first the idea was to repeat the single stopwatch project as a vue.Js training, but in the meantime I
-            challenged myself to make an app with multiple stopwatches. For the moment I'm using only the local storage to
-            store the data but I'm working on an API that will allow us to login and retrieve the current stopwatch's
-            state on multiple devices. This API is almost done and you should have a
+            challenged myself to make an app with multiple stopwatches. It's related to an API that allow us to login and retrieve the current stopwatch's
+            state on multiple devices. This API is currently hosted by Heroku and connect a mongoDB database, you should have a
             <a href="https://github.com/DamienLopvet/multiple-chrono-backend" target="_blank" class="link text-primary"> look</a> at it!!
           </p>
         </div>
@@ -99,9 +98,9 @@
             class="rounded border border-primary">
           <div class="card-body">
             <h5 class="card-title">Multiple Stopwatches</h5>
-            <p class="card-text">This app is for those who need to measure their time on different projects</p>
+            <p class="card-text">This app is for those who need to measure their time on different projects and devices</p>
             <hr>
-            <p class="card-text text-info">NodeJS - Express - Vuejs - LocalStorage <br /> Pure CSS</p>
+            <p class="card-text text-info">NodeJS - Express - Vuejs - LocalStorage - MongoDb - Mongoose  <br /> Pure CSS</p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/multiple-chronos" target="_blank"
                 class="btn btn-primary px-3 mx-auto my-1">Try the app</a>
