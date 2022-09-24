@@ -38,9 +38,7 @@
         <div class="lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
           <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Internship</a>
           <a class="btn btn-outline-secondary px-4" href="#home" role="button">Own projects</a>
-          <a class="btn btn-outline-secondary px-4"
-            href="CVDamienLopvet2022.pdf"
-            target="_blank" role="button">CV</a>
+          
 
         </div>
 
