@@ -26,7 +26,7 @@
               <br />
               Location: Geneva
               <br />
-              linkedIn : <a href="https://www.linkedin.com/in/damien-lopvet-019064236/" target="_blank"
+              linkedIn : <a href="https://www.linkedin.com/in/Damien-Lopvet/" target="_blank"
                 class="link">Damien Lopvet</a>
             </p>
             <p class="lead">From Backend to Frontend, I loved to manage all of the projects I have been challenged with.
@@ -100,7 +100,7 @@
             <h5 class="card-title">Multiple Stopwatches</h5>
             <p class="card-text">This app is for those who need to measure their time on different projects and devices</p>
             <hr>
-            <p class="card-text text-info">NodeJS - Express - Vuejs - LocalStorage - MongoDb - Mongoose  <br /> Pure CSS</p>
+            <p class="card-text text-info">NodeJS - Express - Vuejs - Vuex - LocalStorage - MongoDb - Mongoose  <br /> Pure CSS</p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/multiple-chronos" target="_blank"
                 class="btn btn-primary px-3 mx-auto my-1">Try the app</a>
