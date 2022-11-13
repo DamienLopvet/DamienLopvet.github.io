@@ -53,12 +53,69 @@
     <div id="home" class="d-flex flex-column flex-wrap align-items-center">
       <div class="scroll-tracker"></div>
       <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">Own projects</h2>
-      <!--  SINGLE STOPWATCH -->
+      <!--  RESATEST -->
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5 ">
         <div class=" card-left card  m-3 my-3  border-4 border-white " style="width: 25rem;">
-          <img src="..\assets\singleStopWatch.webp" width="100%" alt="single-stopwatche-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image border-primary rounded border">
+            <img src="..\assets\resatest.jpg" width="100%" alt="single-stopwatche-screenshot"
+              class="  image">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Reservation Interface</h3>
+            <p class="card-text">I needed a user friendly interface to set up google calendar events</p>
+            <hr>
+            <p class="card-text text-info">React.js - React router <br /> google API</p>
+            <div class="d-flex flex-column">
+              <a href="https://etwincorp.com/resatest" target="_blank" class="btn btn-primary px-3 mx-auto my-1">Try
+                the app</a>
+              <a href="https://github.com/DamienLopvet/resatest" target="_blank"
+                class="btn btn-outline-primary mx-auto my-1">See the code</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+          <h3 class="mb-3">Single stopwatch </h3>
+          <p>I needed a user friendly interface to set up google calendar events.
+            This mobile first designed interface allows users to create and retreive events with one hand on their smartphone.
+          </p>
+        </div>
+      </div>
+
+      <!--FACE RECOGNITION-->
+      <div
+        class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5ed container bg-light py-5">
+        <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+          <h3 class="mb-3">Face recognition</h3>
+          <p>This project is an attempt to implement a AI API.
+            There is a debat about face recognition and privacy but it will be used more and more.
+          </p>
+        </div>
+        <div class="card-right card  m-3 my-3  border-4 border-white" style="width: 25rem;">
+          <div class="card-image rounded border border-primary ">
+            <img src="..\assets\faceRecognition.jpg" width="100%" loading="lazy" alt="multiple-stopwatches-screenshot"
+              class="image">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Face recognition</h3>
+            <p class="card-text">This project is an attempt to implement a AI API.</p>
+            <hr>
+            <p class="card-text text-info">Vuejs - face-api</p>
+            <div class="d-flex flex-column">
+              <a href="https://etwincorp.com/faceRecognition" target="_blank"
+                class="btn btn-primary px-3 mx-auto my-1">Try the app</a>
+              <a href="https://github.com/DamienLopvet/faceRecognition" target="_blank"
+                class="btn btn-outline-primary mx-auto my-1">See the code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5 ">
+        <div class=" card-left card  m-3 my-3  border-4 border-white " style="width: 25rem;">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\singleStopWatch.webp" width="100%" alt="single-stopwatche-screenshot">
+          </div>
           <div class="card-body">
             <h2 class="card-title">Single Stopwatch</h2>
             <p class="card-text">This is my first project ever, I needed an editable stopwatch !!</p>
@@ -92,10 +149,11 @@
           </p>
         </div>
         <div class="card-right card  m-3 my-3  border-4 border-white" style="width: 25rem;">
-          <img src="..\assets\multiple-chronos.webp" width="100%" loading="lazy" alt="multiple-stopwatches-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\multiple-chronos.webp" width="100%" loading="lazy" alt="multiple-stopwatches-screenshot">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Multiple Stopwatches</h5>
+            <h3 class="card-title">Multiple Stopwatches</h3>
             <p class="card-text">This app is for those who need to measure their time on different projects and devices</p>
             <hr>
             <p class="card-text text-info">NodeJS - Express - Vuejs - Vuex - LocalStorage - MongoDb - Mongoose  <br /> Pure CSS</p>
@@ -112,10 +170,11 @@
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="card-left card  m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
-          <img src="..\assets\Youfeed.webp" width="100%" loading="lazy" alt="you-feed-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\Youfeed.webp" width="100%" loading="lazy" alt="you-feed-screenshot">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Breast feeding</h5>
+            <h3 class="card-title">Breast feeding</h3>
             <p class="card-text">this mobile first and Progressive web app allows new moms to know at a glance their breast feeding history
             </p>
             <hr>
@@ -160,10 +219,11 @@
           </p>
         </div>
         <div class="card-right card  m-3 mx-3 my-3  border-4 border-white" style="width: 25rem;">
-          <img src="..\assets\Groupomania.webp" width="100%" loading="lazy" alt="groupomania-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\Groupomania.webp" width="100%" loading="lazy" alt="groupomania-screenshot">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Groupomania</h5>
+            <h3 class="card-title">Groupomania</h3>
             <p class="card-text">This is my graduating project, I made an API and the Frontend of this internal social
               network. It includes comments and searches features as well as administration functionalities </p>
             <hr>
@@ -185,10 +245,11 @@
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="card-left card  m-3 my-3  border-4 border-white" style="width: 25rem;">
-          <img src="..\assets\hotTakes.webp" alt="Hot-sauce-screenshot" width="100%" loading="lazy"
-            class="rounded  border border-primary">
+          <div class="card-image rounded  border border-primary">
+            <img src="..\assets\hotTakes.webp" alt="Hot-sauce-screenshot" width="100%" loading="lazy">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Hot Takes</h5>
+            <h3 class="card-title">Hot Takes</h3>
             <p class="card-text">This was my penultimate training project: to build an API for a hot sauce lovers page,
               includes "likes" features and security based on the OWASP standards</p>
             <hr>
@@ -226,10 +287,11 @@
           </p>
         </div>
         <div class="card-right card  m-3 my-3  border-4 border-white" style="width: 25rem;">
-          <img src="..\assets\Ohmyfood.webp" alt="oh-my-food-screenshot" width="100%" loading="lazy"
-            class="rounded  border border-primary ">
+          <div class="card-image rounded  border border-primary ">
+            <img src="..\assets\Ohmyfood.webp" alt="oh-my-food-screenshot" width="100%" loading="lazy">
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Oh my food!!</h5>
+            <h3 class="card-title">Oh my food!!</h3>
             <p class="card-text">This training project asks me to set a mobile first frontend with advanced CSS
               animations.
               The desktop rendering was mine </p>
@@ -251,8 +313,9 @@
       <div id="intern"
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="card-left card  m-3 my-3 -lg border-4 border-white " style="width: 25rem;">
-          <img src="..\assets\jhMediaGroup.webp" width="100%" alt="lightbox-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\jhMediaGroup.webp" width="100%" alt="lightbox-screenshot">
+          </div>
           <div class="card-body">
             <h2 class="card-title">Lightboxes</h2>
             <p class="card-text">This Lightbox feature I built with Js is useful on the <a
@@ -287,8 +350,9 @@
           </p>
         </div>
         <div class="m-3 card-right card  border-4 border-white " style="width: 25rem;">
-          <img src="..\assets\jhGperf.webp" width="100%" loading="lazy" alt="perfomances-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\jhGperf.webp" width="100%" loading="lazy" alt="perfomances-screenshot">
+          </div>
           <div class="card-body">
             <h2 class="card-title">Performances</h2>
             <p class="card-text">Increasing the performances of a <a href="https://jhmediagroup.com/"
@@ -306,8 +370,11 @@
       <div
         class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
         <div class="m-3 card-left card  my-3 -lg border-4 border-white " style="width: 25rem;">
-          <img src="..\assets\jhgAccessibility.webp" width="100%" loading="lazy" alt="accessibility-screenshot"
-            class="rounded border border-primary">
+        
+            <div class="card-image rounded border border-primary">
+              <img src="..\assets\jhgAccessibility.webp" width="100%" loading="lazy" alt="accessibility-screenshot">
+            </div>
+      
           <div class="card-body">
             <h2 class="card-title">Accessibility</h2>
             <p class="card-text">As we refreshed the company's website we needed to make some changes to fit the <a
@@ -340,8 +407,9 @@
           </p>
         </div>
         <div class="m-3 card-right card  -lg border-4 border-white " style="width: 25rem;">
-          <img src="..\assets\tempTracker.webp" width="100%" loading="lazy" alt="temptracker-screenshot"
-            class="rounded border border-primary">
+          <div class="card-image rounded border border-primary">
+            <img src="..\assets\tempTracker.webp" width="100%" loading="lazy" alt="temptracker-screenshot">
+          </div>
           <div class="card-body">
             <h2 class="card-title">Temptracker</h2>
             <p class="card-text">During my internship I spent a lot of time working on this app.
@@ -366,7 +434,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Contact-me</h5>
+            <h3 class="modal-title" id="exampleModalLabel">Contact-me</h3>
             <button type="button" class="btn-close" id="closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -579,9 +647,7 @@ import axios from 'axios';
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
  
-  h3 {
-    margin: 40px 0 0;
-  }
+ 
 
   ul {
     list-style-type: none;
@@ -605,36 +671,24 @@ import axios from 'axios';
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
 
   }
-  .card-left:after{
-    content: "";
-    height: 100%;
-    width: 0;
-    background-color: #00000008;
-    position: absolute;
-    transition: width 500ms;
-    right: 0;
-    pointer-events: none;
+  .card-image{
+    overflow: hidden;
   }
-  .card-left:hover:after{
-    width: 100%;
-    right:unset;
-    left: 0;
+  .card img{
+    transition: 400ms transform ease-in-out;
+    
   }
-  .card-right:after{
-    content: "";
-    height: 100%;
-    width: 0;
-    background-color: #00000008;
-    position: absolute;
-    transition: width 500ms;
-    left: 0;
-    pointer-events: none;
+  .card:hover img{
+    transform:scale(1.03);
+
   }
-  .card-right:hover:after{
-    width: 100%;
-    left:unset;
-    right:0
-  }
+
+.image{
+  aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: bottom;
+}
+  
 
   .nav-link:hover {
     color: #abb4bb !important
