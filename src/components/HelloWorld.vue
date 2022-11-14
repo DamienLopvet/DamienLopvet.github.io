@@ -65,7 +65,19 @@
             <h3 class="card-title">Reservation Interface</h3>
             <p class="card-text">I needed a user friendly interface to set up google calendar events</p>
             <hr>
-            <p class="card-text text-info">React.js - React router <br /> google API</p>
+            <p class="card-text text-info d-flex justify-content-center flex-wrap gap-1">
+              <img src="../assets/node.svg" width="60" alt="node.js" title="node.js" />
+              <img src="../assets/javascript.svg" width="40" height="40" alt="javascript" title="Javascript" />
+              <img src="../assets/css.svg" width="40" height="40" alt="Css" title="CSS 3" />
+              <img src="../assets/html.svg" width="40" height="40" alt="html" title="html 5" />
+              <img src="../assets/react.svg" width="40" alt="react.js" title="react.js"/>
+              <img src="../assets/reactrouter.svg" width="40" alt="reactRouter.js" title="reactRouter.js" />
+              <img src="../assets/GgAPI.png" width="40" height="40" alt="Google api" title="Google calendar api" />
+
+
+
+
+            </p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/resatest" target="_blank" class="btn btn-primary px-3 mx-auto my-1">Try
                 the app</a>
@@ -100,7 +112,15 @@
             <h3 class="card-title">Face recognition</h3>
             <p class="card-text">This project is an attempt to implement a AI API.</p>
             <hr>
-            <p class="card-text text-info">Vuejs - face-api</p>
+            <p class="card-text text-info d-flex justify-content-center gap-2 flex-wrap">
+              <img src="../assets/node.svg" width="60" alt="node.js" title="node.js" />
+              <img src="../assets/javascript.svg" width="40" height="40" alt="javascript" title="Javascript" />
+              <img src="../assets/css.svg" width="40" height="40" alt="Css" title="CSS 3" />
+              <img src="../assets/vue.svg" width="30" alt="reactRouter.js" title="reactRouter.js" />
+              <img src="../assets/faceapi.svg" width="40" height="40" alt="face API" title="face API" />
+
+              
+            </p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/faceRecognition" target="_blank"
                 class="btn btn-primary px-3 mx-auto my-1">Try the app</a>
@@ -120,7 +140,13 @@
             <h2 class="card-title">Single Stopwatch</h2>
             <p class="card-text">This is my first project ever, I needed an editable stopwatch !!</p>
             <hr>
-            <p class="card-text text-info">NodeJS - Vanilla JS - LocalStorage <br /> Pure CSS/HTML</p>
+            <p class="card-text text-info d-flex justify-content-center gap-1 flex-wrap">
+              <img src="../assets/node.svg" width="60" alt="node.js" title="node.js" />
+              <img src="../assets/javascript.svg" width="40" height="40" alt="javascript" title="Javascript" />
+              <img src="../assets/css.svg" width="40" height="40" alt="Css" title="CSS 3" />
+              <img src="../assets/html.svg" width="40" height="40" alt="html" title="html 5" />
+              <img src="../assets/local-storage.svg" width="40" height="40" alt="Local storage" title="Local storage" />
+            </p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/chronometer" target="_blank" class="btn btn-primary px-3 mx-auto my-1">Try
                 the app</a>
@@ -156,7 +182,17 @@
             <h3 class="card-title">Multiple Stopwatches</h3>
             <p class="card-text">This app is for those who need to measure their time on different projects and devices</p>
             <hr>
-            <p class="card-text text-info">NodeJS - Express - Vuejs - Vuex - LocalStorage - MongoDb - Mongoose  <br /> Pure CSS</p>
+            <p class="card-text text-info d-flex justify-content-center flex-wrap gap-1">
+              <img src="../assets/node.svg" width="60" alt="node.js" title="node.js" />
+              <img src="../assets/express.svg" width="30" alt="express.js" title="express.js" />
+              <img src="../assets/javascript.svg" width="40" height="40" alt="javascript" title="Javascript" />
+              <img src="../assets/css.svg" width="40" height="40" alt="Css" title="CSS 3" />
+              <img src="../assets/html.svg" width="40" height="40" alt="html" title="html 5" />
+              <img src="../assets/vue.svg" width="30" alt="reactRouter.js" title="reactRouter.js" />
+              <img src="../assets/local-storage.svg" width="40" height="40" alt="Local storage" title="Local storage" />
+              <img src="../assets/mongoDb.svg" width="40" height="40" alt="MongoDB" title="MongoDB" />
+              <img src="../assets/mongoose.png" width="80" alt="Mongoose" title="Mongoose" style="translate: 0 -18px" />
+            </p>
             <div class="d-flex flex-column">
               <a href="https://etwincorp.com/multiple-chronos" target="_blank"
                 class="btn btn-primary px-3 mx-auto my-1">Try the app</a>
@@ -480,7 +516,6 @@
 
 <script>
 import axios from 'axios';
-
 
   export default {
     name: 'HelloWorld',
