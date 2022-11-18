@@ -290,8 +290,8 @@
                     </p>
                 </div>
             </div>
- <!-- GROUPOMANIA -->
- <div
+            <!-- GROUPOMANIA -->
+            <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
             >
                 <div
@@ -801,8 +801,7 @@
                     </div>
                 </div>
             </div>
-            
-           
+
             <!-- HOT SAUCES -->
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
@@ -890,7 +889,6 @@
                     </p>
                 </div>
             </div>
-            
         </div>
         <div>
             <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="work">
@@ -1473,6 +1471,14 @@
             },
             handleScroll() {
                 this.scrollpx = window.scrollY;
+                const sectionTitles =
+                    document.querySelectorAll(".section-title");
+                sectionTitles.forEach((element) => {
+                    window.addEventListener(
+                        "scroll",
+                        this.increaseTitleSize(element)
+                    );
+                });
             },
             getDate() {
                 let dateNow = new Date();
@@ -1541,6 +1547,41 @@
                     titleObserver.observe(sectionTitle);
                 });
             },
+
+            increaseTitleSize(element) {
+                if (!element) {
+                    return;
+                }
+
+                var distanceToTop =
+                    window.pageYOffset +
+                    element.getBoundingClientRect()?.top -
+                    500;
+                var elementHeight = element.offsetHeight;
+                var scrollTop = document.documentElement.scrollTop;
+
+                if (window.innerWidth > 480) {
+                    var fontSize = 42;
+
+                    if (scrollTop > distanceToTop) {
+                        fontSize -= (scrollTop - distanceToTop) / elementHeight;
+                    }
+
+                    if (fontSize <= 42) {
+                        element.style.fontSize = "" + fontSize + "px";
+                    }
+                } else {
+                    fontSize = 33;
+
+                    if (scrollTop > distanceToTop) {
+                        fontSize -= (scrollTop - distanceToTop) / elementHeight;
+                    }
+
+                    if (fontSize <= 33) {
+                        element.style.fontSize = "" + fontSize + "px";
+                    }
+                }
+            },
             animateCards() {
                 const cards = document.querySelectorAll(".card");
                 const cardObserver = new IntersectionObserver((entries) => {
@@ -1574,6 +1615,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    h2 {
+        font-size: 35px;
+    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -1610,15 +1654,13 @@
         object-fit: cover;
         object-position: bottom;
     }
-.card-logos img{
-  transition: translate 1000ms
-}
-.card-logos img:hover{
-  translate:0 -5px;
-  transition: translate 200ms
-}
-
-
+    .card-logos img {
+        transition: translate 1000ms;
+    }
+    .card-logos img:hover {
+        translate: 0 -5px;
+        transition: translate 200ms;
+    }
 
     .nav-link:hover {
         color: #abb4bb !important;
