@@ -51,9 +51,19 @@
                             >
                         </p>
                         <p class="lead">
-                            From Backend to Frontend, I loved to manage all of
-                            the projects I have been challenged with. And when I
-                            come home I'm excited to work on my own projects !!
+                            I am a curious, passionate, and meticulous developer
+                            who creates modern and functional websites with
+                            great attention to detail. I enjoy working with my
+                            clients to understand their unique needs and deliver
+                            custom solutions that help them achieve their online
+                            goals. I specialize in creating websites for small
+                            and medium sized businesses, startups, and
+                            individual entrepreneurs. My expertise includes
+                            responsive website design, search engine
+                            optimization, security and accessibility. I am also
+                            familiar with a variety of web technologies
+                            including React.js, Vue.js, HTML, CSS, JavaScript,
+                            PHP, and WordPress.
                         </p>
                     </div>
                 </div>
@@ -121,163 +131,178 @@
                         >. Very exciting!!
                     </p>
                 </div>
-                <div
-                    class="card-right card m-3 my-3 border-4 border-white"
-                    style="width: 25rem"
+                <!-- card -->
+                <a
+                    class="card-link"
+                    href="https://etwincorp.com/P3_19072021"
+                    target="_blank"
                 >
-                    <div class="card-image rounded border border-primary">
-                        <img
-                            src="..\assets\Ohmyfood.webp"
-                            alt="oh-my-food-screenshot"
-                            width="100%"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Oh my food!!</h3>
-                        <p class="card-text">
-                            This training project asks me to set a mobile first
-                            frontend with advanced CSS animations. The desktop
-                            rendering was mine
-                        </p>
-                        <hr />
-                        <p
-                            class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
-                        >
+                    <div
+                        class="card-right card m-3 my-3 border-4 border-white"
+                        style="width: 25rem"
+                    >
+                        <div class="card-image rounded border border-primary">
                             <img
-                                src="../assets/node.svg"
-                                width="60"
-                                alt="node.js"
-                                title="node.js"
+                                src="..\assets\Ohmyfood.webp"
+                                alt="oh-my-food-screenshot"
+                                width="100%"
+                                loading="lazy"
                             />
-                            <img
-                                src="../assets/javascript.svg"
-                                width="40"
-                                height="40"
-                                alt="javascript"
-                                title="Javascript"
-                            />
-
-                            <img
-                                src="../assets/sass.svg"
-                                width="30"
-                                alt="Sass"
-                                title="Sass"
-                            />
-                            <img
-                                src="../assets/html.svg"
-                                width="40"
-                                height="40"
-                                alt="html"
-                                title="html 5"
-                            />
-                        </p>
-                        <div class="d-flex flex-column">
-                            <a
-                                href="https://etwincorp.com/P3_19072021"
-                                target="_blank"
-                                class="btn btn-primary px-3 mx-auto my-1"
-                                >Try the app</a
-                            >
-                            <a
-                                href="https://github.com/DamienLopvet/P3_19072021"
-                                target="_blank"
-                                class="btn btn-outline-primary mx-auto my-1"
-                                >See the code</a
-                            >
                         </div>
-                    </div>
-                </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Oh my food!!</h3>
+                            <p class="card-text">
+                                This training project asks me to set a mobile
+                                first frontend with advanced CSS animations. The
+                                desktop rendering was mine
+                            </p>
+                            <hr />
+                            <p
+                                class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
+                            >
+                                <img
+                                    src="../assets/node.svg"
+                                    width="60"
+                                    alt="node.js"
+                                    title="node.js"
+                                />
+                                <img
+                                    src="../assets/javascript.svg"
+                                    width="40"
+                                    height="40"
+                                    alt="javascript"
+                                    title="Javascript"
+                                />
+
+                                <img
+                                    src="../assets/sass.svg"
+                                    width="30"
+                                    alt="Sass"
+                                    title="Sass"
+                                />
+                                <img
+                                    src="../assets/html.svg"
+                                    width="40"
+                                    height="40"
+                                    alt="html"
+                                    title="html 5"
+                                />
+                            </p>
+                            <div class="d-flex flex-column">
+                                <a
+                                    href="https://etwincorp.com/P3_19072021"
+                                    target="_blank"
+                                    class="btn btn-primary px-3 mx-auto my-1"
+                                    >Try the app</a
+                                >
+                                <a
+                                    href="https://github.com/DamienLopvet/P3_19072021"
+                                    target="_blank"
+                                    class="btn btn-outline-primary mx-auto my-1"
+                                    >See the code</a
+                                >
+                            </div>
+                        </div>
+                    </div></a
+                >
             </div>
             <!--  RESATEST -->
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
             >
-                <div
-                    class="card-left card m-3 my-3 border-4 border-white"
-                    style="width: 25rem"
+                <!-- card -->
+                <a
+                    href="https://etwincorp.com/resatest"
+                    target="_blank"
+                    class="card-link"
                 >
-                    <div class="card-image border-primary rounded border">
-                        <img
-                            src="..\assets\resatest.jpg"
-                            width="100%"
-                            alt="single-stopwatche-screenshot"
-                            class="image"
-                        />
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Reservation Interface</h3>
-                        <p class="card-text">
-                            I needed a user friendly interface to set up google
-                            calendar events
-                        </p>
-                        <hr />
-                        <p
-                            class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
-                        >
+                    <div
+                        class="card-left card m-3 my-3 border-4 border-white"
+                        style="width: 25rem"
+                    >
+                        <div class="card-image border-primary rounded border">
                             <img
-                                src="../assets/node.svg"
-                                width="60"
-                                alt="node.js"
-                                title="node.js"
+                                src="..\assets\resatest.jpg"
+                                width="100%"
+                                alt="single-stopwatche-screenshot"
+                                class="image"
                             />
-                            <img
-                                src="../assets/javascript.svg"
-                                width="40"
-                                height="40"
-                                alt="javascript"
-                                title="Javascript"
-                            />
-                            <img
-                                src="../assets/css.svg"
-                                width="40"
-                                height="40"
-                                alt="Css"
-                                title="CSS 3"
-                            />
-                            <img
-                                src="../assets/html.svg"
-                                width="40"
-                                height="40"
-                                alt="html"
-                                title="html 5"
-                            />
-                            <img
-                                src="../assets/react.svg"
-                                width="40"
-                                alt="react.js"
-                                title="react.js"
-                            />
-                            <img
-                                src="../assets/reactrouter.svg"
-                                width="40"
-                                alt="reactRouter.js"
-                                title="reactRouter.js"
-                            />
-                            <img
-                                src="../assets/GgAPI.png"
-                                width="40"
-                                height="40"
-                                alt="Google api"
-                                title="Google calendar api"
-                            />
-                        </p>
-                        <div class="d-flex flex-column">
-                            <a
-                                href="https://etwincorp.com/resatest"
-                                target="_blank"
-                                class="btn btn-primary px-3 mx-auto my-1"
-                                >Try the app</a
-                            >
-                            <a
-                                href="https://github.com/DamienLopvet/resatest"
-                                target="_blank"
-                                class="btn btn-outline-primary mx-auto my-1"
-                                >See the code</a
-                            >
                         </div>
-                    </div>
-                </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Reservation Interface</h3>
+                            <p class="card-text">
+                                I needed a user friendly interface to set up
+                                google calendar events
+                            </p>
+                            <hr />
+                            <p
+                                class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
+                            >
+                                <img
+                                    src="../assets/node.svg"
+                                    width="60"
+                                    alt="node.js"
+                                    title="node.js"
+                                />
+                                <img
+                                    src="../assets/javascript.svg"
+                                    width="40"
+                                    height="40"
+                                    alt="javascript"
+                                    title="Javascript"
+                                />
+                                <img
+                                    src="../assets/css.svg"
+                                    width="40"
+                                    height="40"
+                                    alt="Css"
+                                    title="CSS 3"
+                                />
+                                <img
+                                    src="../assets/html.svg"
+                                    width="40"
+                                    height="40"
+                                    alt="html"
+                                    title="html 5"
+                                />
+                                <img
+                                    src="../assets/react.svg"
+                                    width="40"
+                                    alt="react.js"
+                                    title="react.js"
+                                />
+                                <img
+                                    src="../assets/reactrouter.svg"
+                                    width="40"
+                                    alt="reactRouter.js"
+                                    title="reactRouter.js"
+                                />
+                                <img
+                                    src="../assets/GgAPI.png"
+                                    width="40"
+                                    height="40"
+                                    alt="Google api"
+                                    title="Google calendar api"
+                                />
+                            </p>
+                            <div class="d-flex flex-column">
+                                <a
+                                    href="https://etwincorp.com/resatest"
+                                    target="_blank"
+                                    class="btn btn-primary px-3 mx-auto my-1"
+                                    >Try the app</a
+                                >
+                                <a
+                                    href="https://github.com/DamienLopvet/resatest"
+                                    target="_blank"
+                                    class="btn btn-outline-primary mx-auto my-1"
+                                    >See the code</a
+                                >
+                            </div>
+                        </div>
+                    </div></a
+                >
+                <!-- text -->
                 <div
                     class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
                 >
@@ -294,6 +319,7 @@
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
             >
+            <!-- text -->
                 <div
                     class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
                 >
@@ -322,6 +348,12 @@
                         more...
                     </p>
                 </div>
+                <!-- card -->
+                <a
+                                href="https://etwincorp.com/frontestG"
+                                target="_blank"
+                                class="card-link"
+                                >
                 <div
                     class="card-right card m-3 mx-3 my-3 border-4 border-white"
                     style="width: 25rem"
@@ -403,118 +435,20 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- YOU FEED -->
-            <div
-                class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
-            >
-                <div
-                    class="card-left card m-3 mx-3 my-3 border-4 border-white"
-                    style="width: 25rem"
-                >
-                    <div class="card-image rounded border border-primary">
-                        <img
-                            src="..\assets\Youfeed.webp"
-                            width="100%"
-                            loading="lazy"
-                            alt="you-feed-screenshot"
-                        />
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Breast feeding</h3>
-                        <p class="card-text">
-                            this mobile first and Progressive web app allows new
-                            moms to know at a glance their breast feeding
-                            history
-                        </p>
-                        <hr />
-                        <p
-                            class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
-                        >
-                            <img
-                                src="../assets/node.svg"
-                                width="60"
-                                alt="node.js"
-                                title="node.js"
-                            />
-                            <img
-                                src="../assets/vue.svg"
-                                width="30"
-                                alt="Vue.js"
-                                title="Vue.js"
-                            />
-                            <img
-                                src="../assets/local-storage.svg"
-                                width="40"
-                                height="40"
-                                alt="Local storage"
-                                title="Local storage"
-                            />
-                            <img
-                                src="../assets/bootstrap.svg"
-                                width="40"
-                                height="35"
-                                alt="Bootstrap"
-                                title="Bootstrap"
-                            />
-                        </p>
-                        <div class="d-flex flex-column">
-                            <a
-                                href="https://etwincorp.com/Youfeed"
-                                target="_blank"
-                                class="btn btn-primary px-3 mx-auto my-1"
-                                >Try the app</a
-                            >
-                            <a
-                                href="https://github.com/DamienLopvet/Youfeed"
-                                target="_blank"
-                                class="btn btn-outline-primary mx-auto my-1"
-                                >See the code</a
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
-                >
-                    <h3 class="mb-3">You Feed</h3>
-                    <p>
-                        Oh Life!! <br />
-                        I've had a child recently!!<br />
-                        My wife used to struggle to remember on which side she
-                        fed the baby and at what time it was done... <br />
-                        "well, I said, an app could be helpful!!"<br />
-                        So we looked over the app store to find a breast feeding
-                        app, <strong>Yes !!</strong> This kind of thing already
-                        exists!! but they are all so complex and hard to
-                        use!!<br />
-                        It was fun to finally create a simple and functional
-                        mobile first app, that doesn't require any logging in or
-                        navigation before using it. Just click the shortcut on
-                        the dashboard and click again on the side you're feeding
-                        with and you're done! I managed to let this app
-                        reachable offline so it's easily to use it anywhere any
-                        time!
-                    </p>
-                </div>
+                </div></a>
             </div>
             <!--FACE RECOGNITION-->
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5ed container bg-light py-5"
             >
+            <!-- card -->
+            <a
+                                href="https://etwincorp.com/faceRecognition"
+                                target="_blank"
+                                class="card-link"
+                                >
                 <div
-                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
-                >
-                    <h3 class="mb-3">Face recognition</h3>
-                    <p>
-                        This project is an attempt to implement a AI API. There
-                        is a debat about face recognition and privacy but it
-                        will be used more and more.
-                    </p>
-                </div>
-                <div
-                    class="card-right card m-3 my-3 border-4 border-white"
+                    class="card-left card m-3 my-3 border-4 border-white"
                     style="width: 25rem"
                 >
                     <div class="card-image rounded border border-primary">
@@ -584,31 +518,66 @@
                             >
                         </div>
                     </div>
+                </div></a>
+                <!-- text -->
+                <div
+                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
+                >
+                    <h3 class="mb-3">Face recognition</h3>
+                    <p>
+                        This project is an attempt to implement a AI API. There
+                        is a debat about face recognition and privacy but it
+                        will be used more and more.
+                    </p>
                 </div>
             </div>
+            <!-- HOT TAKES -->
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
             >
+            <!-- text -->
                 <div
-                    class="card-left card m-3 my-3 border-4 border-white"
+                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
+                >
+                    <h3 class="mb-3">Hot Takes</h3>
+                    <p>
+                        Hot takes was challenging!!<br />
+                        This was my first API ever, after following a course it
+                        was time to make one by myself and it had to be robust,
+                        both for the authentication and for the OWASP standards
+                        compliance !! CRUD operations on the data and
+                        "Like/Dislike" system were also required elements for
+                        the functionality I needed...
+                    </p>
+                </div>
+                <!-- card -->
+                <a
+                                href="https://etwincorp.com/P6_08112021"
+                                target="_blank"
+                                class="card-link"
+                                >
+                <div
+                    class="card-right card m-3 my-3 border-4 border-white"
                     style="width: 25rem"
                 >
                     <div class="card-image rounded border border-primary">
                         <img
-                            src="..\assets\singleStopWatch.webp"
+                            src="..\assets\hotTakes.webp"
+                            alt="Hot-sauce-screenshot"
                             width="100%"
-                            alt="single-stopwatche-screenshot"
+                            loading="lazy"
                         />
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title">Single Stopwatch</h2>
+                        <h3 class="card-title">Hot Takes</h3>
                         <p class="card-text">
-                            This is my first project ever, I needed an editable
-                            stopwatch !!
+                            This was my penultimate training project: to build
+                            an API for a hot sauce lovers page, includes "likes"
+                            features and security based on the OWASP standards
                         </p>
                         <hr />
                         <p
-                            class="card-logos text-info d-flex justify-content-center gap-1 flex-wrap"
+                            class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
                         >
                             <img
                                 src="../assets/node.svg"
@@ -617,18 +586,18 @@
                                 title="node.js"
                             />
                             <img
-                                src="../assets/javascript.svg"
-                                width="40"
-                                height="40"
-                                alt="javascript"
-                                title="Javascript"
+                                src="../assets/express.svg"
+                                width="30"
+                                alt="express.js"
+                                title="express.js"
+                                class="px-1"
                             />
                             <img
-                                src="../assets/css.svg"
+                                src="../assets/mongoDb.svg"
                                 width="40"
                                 height="40"
-                                alt="Css"
-                                title="CSS 3"
+                                alt="MongoDB"
+                                title="MongoDB"
                             />
                             <img
                                 src="../assets/html.svg"
@@ -638,70 +607,36 @@
                                 title="html 5"
                             />
                             <img
-                                src="../assets/local-storage.svg"
+                                src="../assets/css.svg"
                                 width="40"
                                 height="40"
-                                alt="Local storage"
-                                title="Local storage"
+                                alt="Css"
+                                title="CSS 3"
                             />
                         </p>
                         <div class="d-flex flex-column">
                             <a
-                                href="https://etwincorp.com/chronometer"
-                                target="_blank"
-                                class="btn btn-primary px-3 mx-auto my-1"
-                                >Try the app</a
-                            >
-                            <a
-                                href="https://github.com/DamienLopvet/chronometer"
+                                href="https://etwincorp.com/P6_08112021"
                                 target="_blank"
                                 class="btn btn-outline-primary mx-auto my-1"
                                 >See the code</a
                             >
                         </div>
                     </div>
-                </div>
-                <div
-                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
-                >
-                    <h3 class="mb-3">Single stopwatch</h3>
-                    <p>
-                        I was looking on the internet for a stopwatch to measure
-                        my weekly training time, but I couldn't find any I was
-                        able to edit in case I forgot to stop it after work. So
-                        I decided to create an editable stopwatch. This is the
-                        origin of this project...
-                    </p>
-                </div>
+                </div></a>
             </div>
             <!-- MULTIPLE STOPWATCH -->
             <div
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5ed container bg-light py-5"
             >
+            <!-- card -->
+            <a
+                                href="https://etwincorp.com/multiple-chronos"
+                                target="_blank"
+                                class="card-link"
+                                >
                 <div
-                    class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
-                >
-                    <h3 class="mb-3">Mutliple Stopwatches</h3>
-                    <p>
-                        At first the idea was to repeat the single stopwatch
-                        project as a vue.Js training, but in the meantime I
-                        challenged myself to make an app with multiple
-                        stopwatches. It's related to an API that allow us to
-                        login and retrieve the current stopwatch's state on
-                        multiple devices. This API is currently hosted by Heroku
-                        and connect a mongoDB database, you should have a
-                        <a
-                            href="https://github.com/DamienLopvet/multiple-chrono-backend"
-                            target="_blank"
-                            class="link text-primary"
-                        >
-                            look</a
-                        >
-                        at it!!
-                    </p>
-                </div>
-                <div
-                    class="card-right card m-3 my-3 border-4 border-white"
+                    class="card-left card m-3 my-3 border-4 border-white"
                     style="width: 25rem"
                 >
                     <div class="card-image rounded border border-primary">
@@ -799,93 +734,28 @@
                             >
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- HOT SAUCES -->
-            <div
-                class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
-            >
-                <div
-                    class="card-left card m-3 my-3 border-4 border-white"
-                    style="width: 25rem"
-                >
-                    <div class="card-image rounded border border-primary">
-                        <img
-                            src="..\assets\hotTakes.webp"
-                            alt="Hot-sauce-screenshot"
-                            width="100%"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Hot Takes</h3>
-                        <p class="card-text">
-                            This was my penultimate training project: to build
-                            an API for a hot sauce lovers page, includes "likes"
-                            features and security based on the OWASP standards
-                        </p>
-                        <hr />
-                        <p
-                            class="card-logos text-info d-flex justify-content-center flex-wrap gap-1"
-                        >
-                            <img
-                                src="../assets/node.svg"
-                                width="60"
-                                alt="node.js"
-                                title="node.js"
-                            />
-                            <img
-                                src="../assets/express.svg"
-                                width="30"
-                                alt="express.js"
-                                title="express.js"
-                                class="px-1"
-                            />
-                            <img
-                                src="../assets/mongoDb.svg"
-                                width="40"
-                                height="40"
-                                alt="MongoDB"
-                                title="MongoDB"
-                            />
-                            <img
-                                src="../assets/html.svg"
-                                width="40"
-                                height="40"
-                                alt="html"
-                                title="html 5"
-                            />
-                            <img
-                                src="../assets/css.svg"
-                                width="40"
-                                height="40"
-                                alt="Css"
-                                title="CSS 3"
-                            />
-                        </p>
-                        <div class="d-flex flex-column">
-                            <a
-                                href="https://etwincorp.com/P6_08112021"
-                                target="_blank"
-                                class="btn btn-outline-primary mx-auto my-1"
-                                >See the code</a
-                            >
-                        </div>
-                    </div>
-                </div>
+                </div></a>
+                <!-- text -->
                 <div
                     class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
                 >
-                    <h3 class="mb-3">Hot Takes</h3>
+                    <h3 class="mb-3">Mutliple Stopwatches</h3>
                     <p>
-                        Hot takes was challenging!!<br />
-                        This was my first API ever, after following a course it
-                        was time to make one by myself and it had to be robust,
-                        both for the authentication and for the OWASP standards
-                        compliance !! CRUD operations on the data and
-                        "Like/Dislike" system were also required elements for
-                        the functionality I needed...
+                        At first the idea was to repeat the single stopwatch
+                        project as a vue.Js training, but in the meantime I
+                        challenged myself to make an app with multiple
+                        stopwatches. It's related to an API that allow us to
+                        login and retrieve the current stopwatch's state on
+                        multiple devices. This API is currently hosted by Heroku
+                        and connect a mongoDB database, you should have a
+                        <a
+                            href="https://github.com/DamienLopvet/multiple-chrono-backend"
+                            target="_blank"
+                            class="link text-primary"
+                        >
+                            look</a
+                        >
+                        at it!!
                     </p>
                 </div>
             </div>
@@ -899,6 +769,12 @@
                 id="intern"
                 class="mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5"
             >
+            <!-- card -->
+            <a
+                                href="https://jhmediagroup.com/"
+                                target="_blank"
+                                class="card-link"
+                                >
                 <div
                     class="card-left card m-3 my-3 -lg border-4 border-white"
                     style="width: 25rem"
@@ -978,7 +854,7 @@
                             >
                         </div>
                     </div>
-                </div>
+                </div></a>
                 <div
                     class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto"
                 >
@@ -1348,6 +1224,17 @@
                                     >
                                         Message sent successfully !!
                                     </p>
+                                    
+                                </transition>
+                                <transition>
+                                    <p
+                                    v-if="messageError"
+                                        class="fw-bold text-danger flex-auto"
+                                    >
+                                       Oops there was a problem sending the messsage !!
+                                       please try again later.
+                                    </p>
+
                                 </transition>
                                 <button
                                     type="submit"
@@ -1399,7 +1286,7 @@
                 </li>
                 <li class="nav-item">
                     <a
-                        href="CVDamienLopvet2022.pdf"
+                        href="cv-damien-lopvet-francais.pdf"
                         target="_blank"
                         class="nav-link px-2 text-muted"
                         >My CV</a
@@ -1426,6 +1313,7 @@
                 contactName: "",
                 isactive: false,
                 messageSent: false,
+                messageError: false,
             };
         },
         methods: {
@@ -1442,7 +1330,7 @@
                 axios
                     .request({
                         method: "POST",
-                        url: `https://mailpi.herokuapp.com/api/`,
+                        url: `https://mailpi.onrender.com/api/`,
                         headers: {
                             "Content-Type": "application/json",
                         },
@@ -1450,7 +1338,7 @@
                             message: data,
                         },
                     })
-                    .then((response) => {
+                    .then(() => {
                         this.isactive = false;
                         this.message = "";
                         this.contactInfo = "";
@@ -1463,10 +1351,14 @@
                             self.messageSent = false;
                         }, 3000);
 
-                        console.log(response.data.message);
                     })
-                    .catch((error) => {
-                        console.log(error);
+                    .catch(() => {
+                        var self = this;
+                        this.messageError = true
+                        setTimeout(function () {
+                            self.messageError = false;
+                            self.isactive = false;
+                        }, 3000);
                     });
             },
             handleScroll() {
@@ -1710,6 +1602,9 @@
         outline-color: white;
         outline-width: 1px;
     }
+    .card-link {
+        all: unset;
+    }
 
     /* ANIMATIONS */
     .container {
@@ -1718,6 +1613,8 @@
     .heroimg-container {
         height: 400px;
     }
+
+    /**RESPONSIVE */
     @media screen and (min-width: 576px) {
         .heroimg:hover {
             border-radius: 25rem;
