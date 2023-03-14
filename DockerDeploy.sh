@@ -24,10 +24,16 @@ git add .
 # Provide a message for the commit
 
 read -p "What is your commit message ? "
+if [[ $REPLY ]]
+then
 git commit -m " $REPLY "
 git push -f https://github.com/DamienLopvet/DamienLopvet.github.io.git master:gh-pages
 cd -
+else
 
+echo "No commit message provided, action aborted"
+
+fi
 else
 
   echo "push to gihub pages aborted";
@@ -47,11 +53,21 @@ git add .
 # Provide a message for the commit
 
 read -p "What is your commit message ? "
+if [[ $REPLY ]]
+then
 git commit -m " $REPLY "
 git push
+else
+
+echo "No commit message provided, action aborted"
+
+fi
 
 else
   echo "push to repo aborted";
 fi
 
 echo "end of script"
+
+
+# Just run : bash DockerDeploy.sh
