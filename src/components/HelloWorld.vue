@@ -20,16 +20,16 @@
                     <div editable="rich">
                         <p class="lead">
                             Mail:
-                            <a href="mailto:etwincorp@gmail.com" class="link">etwincorp@gmail.com</a>
+                            <a href="mailto:etwincorp@gmail.com" class="link text-primary">etwincorp@gmail.com</a>
                             <br />
                             Tel:
-                            <a href="tel:+41-78-251-95-80 " class="link">+41.78.251.95.80
+                            <a href="tel:+41-78-251-95-80 " class="link text-primary">+41.78.251.95.80
                             </a>
                             <br />
                             Location: Geneva
                             <br />
                             linkedIn :
-                            <a href="https://www.linkedin.com/in/Damien-Lopvet/" target="_blank" class="link">Damien
+                            <a href="https://www.linkedin.com/in/Damien-Lopvet/" target="_blank" class="link text-primary">Damien
                                 Lopvet</a>
                         </p>
                         <p class="lead">
@@ -71,20 +71,19 @@
             <div class="card-container mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
                 <div class="appearing-box d-none d-sm-block"></div>
 
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto  text-white">
                     <h3 class="mb-3">Oh my food !!</h3>
                     <p>
                         The goal of these pages was to create advanced CSS
                         animations.
                         <br />
                         Mobile first, this app needed a load spinner while data
-                        travels throught the web, and discreet animations to
-                        make the UX dynamic. This was the occasion in wich I had
+                        travels throught the web . Discreet animations make the user experience dynamic. This was the occasion in wich I had
                         to dive into key-frames and CSS tricks...
                         <br />The project was also about building highly
                         maintainable code using SCSS with
                         <a href="https://sass-lang.com/" target="_blank" class="link text-primary">
-                            SASS</a>. Very exciting!!
+                            SASS</a> . Very exciting!!
                     </p>
                 </div>
                 <!-- card -->
@@ -159,7 +158,7 @@
                     </div>
                 </a>
                 <!-- text -->
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Reservation Interface</h3>
                     <p>
                         I needed a user friendly interface to set up google
@@ -175,14 +174,14 @@
                 <div class="appearing-box d-none d-sm-block"></div>
 
                 <!-- text -->
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Groupomania</h3>
                     <p>
                         This is the big Project of the training I did at
                         <a href="https://openclassrooms.com/fr/" target="_blank"
                             class="link text-primary">Openclassrooms</a>. The project was to create an internal social
                         network
-                        for the Groupomania Company. I first made the API that I
+                        for the Groupomania Company . I first made the API that I
                         documented with
                         <a href="https://swagger.io/" target="_blank" class="link text-primary">Swagger.io</a>
                         and then I created the frontend. <br />I was free to
@@ -267,7 +266,7 @@
                     </div>
                 </a>
                 <!-- text -->
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Face recognition</h3>
                     <p>
                         This project is an attempt to implement a AI API. There
@@ -281,7 +280,7 @@
                 <div class="appearing-box d-none d-sm-block"></div>
 
                 <!-- text -->
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Hot Takes</h3>
                     <p>
                         Hot takes was challenging!!<br />
@@ -367,15 +366,15 @@
                     </div>
                 </a>
                 <!-- text -->
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Mutliple Stopwatches</h3>
                     <p>
                         At first the idea was to repeat the single stopwatch
-                        project as a vue.Js training, but in the meantime I
+                        project as a Vue.js training, but in the meantime I
                         challenged myself to make an app with multiple
-                        stopwatches. It's related to an API that allow us to
+                        stopwatches . It's related to an API that allows us to
                         login and retrieve the current stopwatch's state on
-                        multiple devices. This API is currently hosted by Heroku
+                        multiple devices . This API is currently hosted by Render
                         and connect a mongoDB database, you should have a
                         <a href="https://github.com/DamienLopvet/multiple-chrono-backend" target="_blank"
                             class="link text-primary">
@@ -429,7 +428,7 @@
                         </div>
                     </div>
                 </a>
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Lightboxes</h3>
                     <p>
                         During my internship at
@@ -445,7 +444,7 @@
                 class="card-container mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
                 <div class="growing-box d-none d-sm-block"></div>
 
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Performances</h3>
                     <p>
                         During my internship at
@@ -518,7 +517,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Accessibility</h3>
                     <p>
                         This
@@ -538,7 +537,7 @@
                 class="card-container mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
                 <div class="growing-box d-none d-sm-block"></div>
 
-                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto">
+                <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto text-white">
                     <h3 class="mb-3">Temptracker</h3>
                     <p>
                         The best part of my internship at
@@ -1162,9 +1161,9 @@ li {
     bottom: 0;
     left: 0;
     right: 0;
-    transform-origin: bottom;
+    transform-origin: top;
     z-index: -1;
-    background-color: #53a2f1;
+    background-color: #185280;
     scale: 0
 }
 .appearing-box{
