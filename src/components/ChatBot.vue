@@ -10,7 +10,7 @@
                 </p>
             </div>
             <div class="formGroup">
-                
+
                 <form @submit.prevent="handleChat">
                     <label for="userInput">
                         <input id="userInput" type="text" v-model="userInput" autoComplete="off">
@@ -33,15 +33,30 @@ export default {
     name: "ChatBot",
     data() {
         return {
+            countChatMessages: 0,
             chatbulle: chatbulle,
             chatData: [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show his skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`],
             userInput: null,
             systemMessage: {
                 role: 'system',
-                content: "You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the following information. Personal Data:if they ask for my phone number, just answer : 'located on top left of my portfolio'. email address :'damienlopvet@gmail.com'. age : '43'. Current address : 'Challex', France, it's near the Swiss border. History:I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in Geneva. Skills:I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS."
+                content: "You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the following information. Personal Data:if they ask for my phone number, just answer : 'located on top left of my portfolio'. email address :'damienlopvet@gmail.com'. age : '43'. Current address : 'Challex', France, it's near the Swiss border. History:I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in Geneva. Skills:I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS. If the user asks if I can reach out to him just ask him to provide some contact info and I will, or he can fullfill the contact form in the footer of this portfolio"
             },
-            chatbotError:'',
-            informLongTimeForFirstResponse:''
+            chatbotError: '',
+            informLongTimeForFirstResponse: ''
+        }
+    },
+    watch: {
+        chatData:
+        {
+            handler() {
+                this.countChatMessages += 1;
+              
+                if (this.countChatMessages === 2) {
+                    this.countChatMessages = 0
+                    this.sendDataToMail()
+                }
+            },
+            deep: true
         }
     },
     methods: {
@@ -54,7 +69,7 @@ export default {
                 modal.style.translate = '0px'
                 modal.close()
             }, 300);
-            await this.sendDataToMail()
+
 
         },
         openModal() {
@@ -69,7 +84,6 @@ export default {
             e.target.hasAttribute("data-open-modal") && modal.hasAttribute('open') ? this.closeModal() : this.openModal();
             e.target.hasAttribute("data-close-modal") && this.closeModal();
             if (e.target.hasAttribute("data-close-erase-modal")) {
-                await this.sendDataToMail()
                 this.closeModal();
                 this.chatData = [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`]
             }
@@ -80,7 +94,7 @@ export default {
         handleChat() {
             const input = document.querySelector('#userInput')
             input.disabled = true
-            if(this.chatData.length <= 1)this.informLongTimeForFirstResponse = 'First Response could take up to 30 sec to come'
+            if (this.chatData.length <= 1) this.informLongTimeForFirstResponse = 'First Response could take up to 30 sec to come'
             this.chatData.push(this.userInput)
             this.userInput = '...'
             let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
@@ -103,9 +117,9 @@ export default {
                     this.userInput = ''
                     input.disabled = false
                     input.focus()
-                    this.informLongTimeForFirstResponse =''
+                    this.informLongTimeForFirstResponse = ''
                     setTimeout(() => {
-                        
+
                         modal.scrollTop = modal.scrollHeight
                     }, 100);
                 })
@@ -119,36 +133,36 @@ export default {
         sendDataToMail() {
             let data_ = [...this.chatData]
             data_.shift()
-            
-            if(data_.length > 0){
-                data_ = ['nouveau chat du Portfolio',  ...data_]
-                axios.request({
-                    method: "POST",
-                    url: `https://mailpi.onrender.com/api/`,
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    data: {
-                        message: JSON.stringify(data_),
-                    },
-                })
+
+            data_ = ['nouveau chat du Portfolio', ...data_]
+            axios.request({
+                method: "POST",
+                url: `https://mailpi.onrender.com/api/`,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                data: {
+                    message: JSON.stringify(data_),
+                },
+            })
                 .then(() => {
                     console.log('data stored');
-                    
+
                 })
                 .catch(() => {
                     console.log('failed to store data');
                 });
-            }
+
         },
     },
-    created(){
-        axios.get('https://chatbot-whjg.onrender.com/').then(()=>{
+    created() {
+        axios.get('https://chatbot-whjg.onrender.com/').then(() => {
             this.openModal()
-        }).catch((e)=> console.log(e))
+        }).catch((e) => console.log(e))
         //window.addEventListener("beforeunload", this.sendDataToMail());
-    },
-  
+    }
+
+
 
 }
 </script>
@@ -172,7 +186,7 @@ export default {
     margin-inline: auto 0;
     scale: 0.1;
     transition: all 300ms;
-    background: #343541da;
+    background: #343541f5;
     color: #ececf1;
     padding-inline: 0;
     text-align: left;
@@ -251,20 +265,22 @@ form label img {
     padding-inline: 10px;
     font-size: 0.7rem;
 }
-#chatbotError{
+
+#chatbotError {
     color: red;
     text-align: center;
     font-size: 0.8rem;
 
 }
-#informLongTimeForFirstResponse{
+
+#informLongTimeForFirstResponse {
     color: #3fb27f;
     text-align: center;
     font-size: 0.8rem;
 }
+
 @media (max-width: 575px) {
     .chatbot-dialog {
         max-width: 90%;
     }
-}
-</style>
+}</style>
