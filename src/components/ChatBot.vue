@@ -10,14 +10,15 @@
                 </p>
             </div>
             <div class="formGroup">
-
+                
                 <form @submit.prevent="handleChat">
                     <label for="userInput">
                         <input id="userInput" type="text" v-model="userInput" autoComplete="off">
                         <img src="../assets/sendIcon.svg" width="15" height="15" alt="">
                     </label>
                 </form>
-
+                <p id="informLongTimeForFirstResponse">{{ informLongTimeForFirstResponse }} </p>
+                <p id="chatbotError">{{ chatbotError }} </p>
                 <button id="delete_chat" data-close-erase-modal v-on:click="handleChatModal">Delete Chat</button>
             </div>
         </dialog>
@@ -37,24 +38,10 @@ export default {
             userInput: null,
             systemMessage: {
                 role: 'system',
-                content: `
-                         You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the information I provide below:
-                        Personal Data:
-                        - I would like my chatbot to answer to personal data queries as follow :
-                            - if they ask for my phone number, just answer : "located on top left of my portfolio", ^
-                            - email address : "damienlopvet@gmail.com", 
-                            - age : "43", 
-                            - current address : "Challex, France, it's near the Swiss border".
-
-                        History:
-                        - I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in geneva
-
-                        Skills:
-                        - I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS.
-                        
-                    
-                        `
-            }
+                content: "You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the following information. Personal Data:if they ask for my phone number, just answer : 'located on top left of my portfolio'. email address :'damienlopvet@gmail.com'. age : '43'. Current address : 'Challex', France, it's near the Swiss border. History:I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in Geneva. Skills:I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS."
+            },
+            chatbotError:'',
+            informLongTimeForFirstResponse:''
         }
     },
     methods: {
@@ -82,7 +69,7 @@ export default {
             e.target.hasAttribute("data-close-modal") && this.closeModal();
             if (e.target.hasAttribute("data-close-erase-modal")) {
                 this.closeModal();
-                this.chatData = []
+                this.chatData = [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`]
             }
 
 
@@ -91,14 +78,16 @@ export default {
         handleChat() {
             const input = document.querySelector('#userInput')
             input.disabled = true
+            if(this.chatData.length <= 1)this.informLongTimeForFirstResponse = 'First Response could take up to 30 sec to come'
             this.chatData.push(this.userInput)
+            this.userInput = '...'
             let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
             data_.push(this.systemMessage)
             const data = { messages: data_ };
             console.info('data :' + JSON.stringify(data));
             axios({
                 method: "POST",
-                url: `http://ec2-3-84-195-245.compute-1.amazonaws.com/api/message`,
+                url: `https://chatbot-whjg.onrender.com/api/message`,
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -112,15 +101,19 @@ export default {
                     let message = res.data?.message
                     this.chatData.push(message)
                     this.userInput = ''
+                    input.disabled = false
+                    input.focus()
+                    this.informLongTimeForFirstResponse =''
                     setTimeout(() => {
-
+                        
                         modal.scrollTop = modal.scrollHeight
                     }, 100);
                 })
                 .catch(() => {
-
+                    input.disabled = false
+                    this.userInput = ''
+                    this.chatbotError = 'An error occured, please try again'
                 });
-                input.disabled = false
 
         }
     }
@@ -225,5 +218,16 @@ form label img {
     all: unset;
     padding-inline: 10px;
     font-size: 0.7rem;
+}
+#chatbotError{
+    color: red;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+#informLongTimeForFirstResponse{
+    color: #3fb27f;
+    text-align: center;
+    font-size: 0.8rem;
 }
 </style>
