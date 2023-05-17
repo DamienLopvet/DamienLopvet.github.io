@@ -1,14 +1,15 @@
 <template>
+  <ChatBot />
   <HelloWorld/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import ChatBot from './components/ChatBot.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld, ChatBot
   }
 }
 </script>

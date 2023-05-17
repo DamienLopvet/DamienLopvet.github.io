@@ -1,0 +1,228 @@
+<template>
+    <div class="chatbot">
+
+        <img :src="chatbulle" id="chatbot_open" data-open-modal v-on:click="handleChatModal" />
+        <dialog class="chatbot-dialog" data-modal>
+            <span id="close_chat" data-close-modal v-on:click="handleChatModal">X</span>
+            <div class="chatData" v-for="el in chatData" :key="el">
+                <p>
+                    {{ el }}
+                </p>
+            </div>
+            <div class="formGroup">
+
+                <form @submit.prevent="handleChat">
+                    <label for="userInput">
+                        <input id="userInput" type="text" v-model="userInput" autoComplete="off">
+                        <img src="../assets/sendIcon.svg" width="15" height="15" alt="">
+                    </label>
+                </form>
+
+                <button id="delete_chat" data-close-erase-modal v-on:click="handleChatModal">Delete Chat</button>
+            </div>
+        </dialog>
+    </div>
+</template>
+
+<script>
+import axios from 'axios'
+import chatbulle from '../assets/chatbulle.png'
+
+export default {
+    name: "ChatBot",
+    data() {
+        return {
+            chatbulle: chatbulle,
+            chatData: [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`],
+            userInput: null,
+            systemMessage: {
+                role: 'system',
+                content: `
+                         You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the information I provide below:
+                        Personal Data:
+                        - I would like my chatbot to answer to personal data queries as follow :
+                            - if they ask for my phone number, just answer : "located on top left of my portfolio", ^
+                            - email address : "damienlopvet@gmail.com", 
+                            - age : "43", 
+                            - current address : "Challex, France, it's near the Swiss border".
+
+                        History:
+                        - I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in geneva
+
+                        Skills:
+                        - I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS.
+                        
+                    
+                        `
+            }
+        }
+    },
+    methods: {
+        closeModal() {
+            const modal = document.querySelector("[data-modal]")
+            modal.style.scale = '0.1'
+            modal.style.translate = '150px 120px'
+            setTimeout(() => {
+
+                modal.style.translate = '0px'
+                modal.close()
+            }, 300);
+
+        },
+        openModal() {
+            const modal = document.querySelector("[data-modal]")
+            modal.show()
+            modal.style.scale = '1'
+            modal.scrollTop = modal.scrollHeight
+
+        },
+        handleChatModal(e) {
+            const modal = document.querySelector("[data-modal]")
+            e.target.hasAttribute("data-open-modal") && modal.hasAttribute('open') ? this.closeModal() : this.openModal();
+            e.target.hasAttribute("data-close-modal") && this.closeModal();
+            if (e.target.hasAttribute("data-close-erase-modal")) {
+                this.closeModal();
+                this.chatData = ['hi how can help you today ?', 'hi I want a new website', 'Sure !! when do you want it to be available', 'well... ASAP']
+            }
+
+
+
+        },
+        handleChat() {
+            console.log(this.userInput);
+            this.chatData.push(this.userInput)
+            let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
+            data_.push(this.systemMessage)
+            const data = { messages: data_ };
+            console.info('data :' + JSON.stringify(data));
+            axios({
+                method: "POST",
+                url: `http://ec2-3-84-195-245.compute-1.amazonaws.com/api/message`,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                data: data,
+
+            })
+                .then((res) => {
+                    const modal = document.querySelector("[data-modal]")
+
+                    console.log(res.data.message);
+                    let message = res.data?.message
+                    this.chatData.push(message)
+                    this.userInput = ''
+                    setTimeout(() => {
+
+                        modal.scrollTop = modal.scrollHeight
+                    }, 100);
+                })
+                .catch(() => {
+
+                });
+
+
+        }
+    }
+
+}
+</script>
+<style>
+.chatbot {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+#chatbot_open {
+    cursor: pointer;
+}
+
+.chatbot-dialog {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    margin-inline: auto 0;
+    scale: 0.1;
+    transition: all 300ms;
+    background: #343541;
+    color: #ececf1;
+    padding-inline: 0;
+    text-align: left;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: auto;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #3fb27f;
+    scrollbar-width: thin;
+    padding-bottom: 0;
+}
+
+#close_chat {
+    cursor: pointer;
+    position: sticky;
+    top: 0px;
+    float: right;
+    margin-right: 5px;
+    font-weight: 900;
+    border: 1px solid #3fb27f;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+.formGroup {
+    position: sticky;
+    bottom: 0;
+    background-color: #343541;
+    padding-top: 10px;
+}
+
+form {
+    margin-block: 5px;
+}
+
+form label {
+    width: 95%;
+    position: relative;
+    display: block;
+    margin-inline: auto;
+}
+
+form label img {
+    position: absolute;
+    bottom: 15px;
+    right: 12px
+}
+
+#userInput {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #444654;
+    border-width: 1px;
+    border-color: #343541;
+    border-style: solid;
+    color: #ececf1;
+    padding: 10px
+}
+
+#userInput:focus {
+    outline: none;
+}
+
+.chatData {
+    padding: 20px
+}
+
+.chatData:nth-child(odd) {
+    background-color: #444654;
+}
+
+#delete_chat {
+    all: unset;
+    padding-inline: 10px;
+    font-size: 0.7rem;
+}
+</style>
