@@ -45,7 +45,7 @@ export default {
         }
     },
     methods: {
-        closeModal() {
+        async closeModal() {
             const modal = document.querySelector("[data-modal]")
             modal.style.scale = '0.1'
             modal.style.translate = '150px 120px'
@@ -54,6 +54,7 @@ export default {
                 modal.style.translate = '0px'
                 modal.close()
             }, 300);
+            await this.sendDataToMail()
 
         },
         openModal() {
@@ -63,11 +64,12 @@ export default {
             modal.scrollTop = modal.scrollHeight
 
         },
-        handleChatModal(e) {
+        async handleChatModal(e) {
             const modal = document.querySelector("[data-modal]")
             e.target.hasAttribute("data-open-modal") && modal.hasAttribute('open') ? this.closeModal() : this.openModal();
             e.target.hasAttribute("data-close-modal") && this.closeModal();
             if (e.target.hasAttribute("data-close-erase-modal")) {
+                await this.sendDataToMail()
                 this.closeModal();
                 this.chatData = [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`]
             }
@@ -84,7 +86,6 @@ export default {
             let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
             data_.push(this.systemMessage)
             const data = { messages: data_ };
-            console.info('data :' + JSON.stringify(data));
             axios({
                 method: "POST",
                 url: `https://chatbot-whjg.onrender.com/api/message`,
@@ -97,7 +98,6 @@ export default {
                 .then((res) => {
                     const modal = document.querySelector("[data-modal]")
 
-                    console.log(res.data.message);
                     let message = res.data?.message
                     this.chatData.push(message)
                     this.userInput = ''
@@ -115,14 +115,40 @@ export default {
                     this.chatbotError = 'An error occured, please try again'
                 });
 
-        }
+        },
+        sendDataToMail() {
+            let data_ = [...this.chatData]
+            data_.shift()
+            
+            if(data_.length > 0){
+                data_ = ['nouveau chat du Portfolio',  ...data_]
+                axios.request({
+                    method: "POST",
+                    url: `https://mailpi.onrender.com/api/`,
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    data: {
+                        message: JSON.stringify(data_),
+                    },
+                })
+                .then(() => {
+                    console.log('data stored');
+                    
+                })
+                .catch(() => {
+                    console.log('failed to store data');
+                });
+            }
+        },
     },
     created(){
         axios.get('https://chatbot-whjg.onrender.com/').then(()=>{
-            console.log('message api ok');
             this.openModal()
-        })
-    }
+        }).catch((e)=> console.log(e))
+        //window.addEventListener("beforeunload", this.sendDataToMail());
+    },
+  
 
 }
 </script>
