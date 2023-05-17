@@ -82,14 +82,15 @@ export default {
             e.target.hasAttribute("data-close-modal") && this.closeModal();
             if (e.target.hasAttribute("data-close-erase-modal")) {
                 this.closeModal();
-                this.chatData = ['hi how can help you today ?', 'hi I want a new website', 'Sure !! when do you want it to be available', 'well... ASAP']
+                this.chatData = []
             }
 
 
 
         },
         handleChat() {
-            console.log(this.userInput);
+            const input = document.querySelector('#userInput')
+            input.disabled = true
             this.chatData.push(this.userInput)
             let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
             data_.push(this.systemMessage)
@@ -119,7 +120,7 @@ export default {
                 .catch(() => {
 
                 });
-
+                input.disabled = false
 
         }
     }
