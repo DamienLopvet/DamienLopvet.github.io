@@ -34,7 +34,7 @@ export default {
     data() {
         return {
             chatbulle: chatbulle,
-            chatData: [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`],
+            chatData: [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show his skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`],
             userInput: null,
             systemMessage: {
                 role: 'system',
@@ -172,7 +172,7 @@ export default {
     margin-inline: auto 0;
     scale: 0.1;
     transition: all 300ms;
-    background: #343541;
+    background: #34354193;
     color: #ececf1;
     padding-inline: 0;
     text-align: left;
@@ -261,5 +261,10 @@ form label img {
     color: #3fb27f;
     text-align: center;
     font-size: 0.8rem;
+}
+@media (max-width: 575px) {
+    .chatbot-dialog {
+        max-width: 100%;
+    }
 }
 </style>
