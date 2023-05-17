@@ -116,6 +116,12 @@ export default {
                 });
 
         }
+    },
+    created(){
+        axios.get('https://chatbot-whjg.onrender.com/').then(()=>{
+            console.log('message api ok');
+            this.openModal()
+        })
     }
 
 }
