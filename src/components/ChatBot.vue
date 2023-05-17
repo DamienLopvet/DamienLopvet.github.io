@@ -172,7 +172,7 @@ export default {
     margin-inline: auto 0;
     scale: 0.1;
     transition: all 300ms;
-    background: #34354193;
+    background: #343541da;
     color: #ececf1;
     padding-inline: 0;
     text-align: left;
@@ -264,7 +264,7 @@ form label img {
 }
 @media (max-width: 575px) {
     .chatbot-dialog {
-        max-width: 100%;
+        max-width: 90%;
     }
 }
 </style>
