@@ -73,25 +73,8 @@ export default {
 
   </div>
 </template>
+
 <style scoped>
-h2 {
-  font-size: 35px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.flex-auto {
-  flex: auto;
-}
-
 .card {
   min-width: 250px;
   outline-style: solid;
@@ -216,8 +199,8 @@ li {
   .card-right {
     translate: 300px;
     opacity: 0;
-    transition: all 400ms ease-in-out;
-  }
+  transition: all 400ms ease-in-out;
+}
 
   .show {
     translate: 0;
@@ -239,86 +222,10 @@ li {
   height: 30px;
   width: auto;
 }
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-
-.scroll-tracker {
-  position: fixed;
-  height: 4px;
-  inset: 0 0 auto;
-  background-color: #42b983;
-  z-index: 1030;
-  width: 0;
-  border-bottom-right-radius: 10px;
-}
-
-.modal {
-  transition: all 400ms;
-}
-
-.section-title {
-  background-color: #fffffff3;
-  top: -1px;
-  transition: box-shadow 500ms;
-}
-
-#home {
-  z-index: 999;
-}
-
-.sticky-top {
-  z-index: 999;
-}
-
-#work {
-  z-index: 999;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 575px) {
-  .heroimg-container {
-    height: 250px;
-  }
-
-  .heroimg {
-    border-radius: 25rem;
-    width: 15rem;
-    height: 15rem;
-  }
-
-  .logo {
-    width: 50px;
-  }
-
-  .scroll-tracker {
-    height: 2px;
-  }
-
-  .card {
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
-  }
-}
-
-.card-container {
-  position: relative;
-  background-color: transparent !important;
-  z-index: 1
-}
-
 .card-container:nth-child(even) {
   flex-direction: row-reverse !important;
+  
 }
-
-
 
 .growing-box {
   width: 100%;

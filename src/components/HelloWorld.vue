@@ -64,16 +64,16 @@
     <!-- MY WORK SECTION -->
    
     <main>
-        <div id="home" class="d-flex flex-column flex-wrap align-items-center">
-            <div class="scroll-tracker"></div>
-            <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">
-                Own projects
-            </h2>
-              <!-- MULTIPLE STOPWATCH -->
-                                      <ProjectCard 
-                                                title="Multiple Stopwatches" 
-                                                image="stopWatch.gif"
-                                                descriptionHtml="At first the idea was to repeat the single stopwatch
+                <div id="home" class="d-flex flex-column flex-wrap align-items-center gap-4">
+                <div class="scroll-tracker"></div>
+                <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">
+                    Own projects
+                </h2>
+                  <!-- MULTIPLE STOPWATCH -->
+                                          <ProjectCard 
+                                                    title="Multiple Stopwatches" 
+                                                    image="stopWatch.gif"
+                                                    descriptionHtml="At first the idea was to repeat the single stopwatch
                                             project as a Vue.js training, but in the meantime I
                                             challenged myself to make an app with multiple
                                             stopwatches . It's related to an API that allows us to
@@ -83,30 +83,30 @@
                                                     class='link text-primary'>
                                                     look</a>
                                                 at it!!"
-                                    cardDescription=" This app is for those who need to measure their time
+                                        cardDescription=" This app is for those who need to measure their time
                                                     on different projects and devices"
-                                                :technologies= '["node.svg", "vue.svg", "local-storage.svg", "mongoDb.svg", "bashScript.svg"]'
-                                                cardLinkFront="https://etwincorp.com/multiple-chronos"
-                                                />
+                                                    :technologies= '["node.svg", "vue.svg", "local-storage.svg", "mongoDb.svg", "bashScript.svg"]'
+                                                    cardLinkFront="https://etwincorp.com/multiple-chronos"
+                                                    />
             
-                                <!--  RESATEST -->
-                                    <ProjectCard  
-                                    title="Reservation Interface" 
-                                    image="resatest.gif"
-                                    descriptionHtml="I needed a user friendly interface to set up google
+                                    <!--  RESATEST -->
+                                        <ProjectCard  
+                                        title="Reservation Interface" 
+                                        image="resatest.gif"
+                                        descriptionHtml="I needed a user friendly interface to set up google
                         calendar events. This mobile first designed interface
                         allows users to create and retreive events with one hand
                         on their smartphone."
-                                    cardDescription="I needed a user friendly interface to set up
+                                        cardDescription="I needed a user friendly interface to set up
                                 google calendar events"
-                                    :technologies= '["node.svg", "react.svg","taillwind.svg", "GgAPI.png", "docker.svg"]'
-                                    cardLinkFront="https://etwincorp.com/resatest"
-                                    />
-                                    <!-- OH MY FOOD -->
-                                     <ProjectCard  
-                                title="Oh my food !!" 
-                                image="OhmyFood.gif"
-                                descriptionHtml="The goal of these pages was to create advanced CSS
+                                        :technologies= '["node.svg", "react.svg", "taillwind.svg", "GgAPI.png", "docker.svg"]'
+                                        cardLinkFront="https://etwincorp.com/resatest"
+                                        />
+                                        <!-- OH MY FOOD -->
+                                         <ProjectCard  
+                                    title="Oh my food !!" 
+                                    image="OhmyFood.gif"
+                                    descriptionHtml="The goal of these pages was to create advanced CSS
                         animations.
                         <br />
                         Mobile first, this app needed a load spinner while data
@@ -116,17 +116,17 @@
                         maintainable code using SCSS with
                         <a href='https://sass-lang.com/' target='_blank' class='link text-primary'>
                                 SASS</a> . Very exciting!!"
-                                cardDescription="This training project asks me to set a mobile
-            first frontend with advanced CSS animations. The
-            desktop rendering was mine"
-                                    :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
-                                    cardLinkFront="https://etwincorp.com/P3_19072021"
-                                    />
-                                <!-- GROUPOMANIA -->
-                                    <ProjectCard 
-                                        title="Groupomania" 
-                                        image="groupomania.gif"
-                                        descriptionHtml='This is the big Project of the training I did at
+                                    cardDescription="This training project asks me to set a mobile
+                                     first frontend with advanced CSS animations. The
+                                desktop rendering was mine"
+                                        :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
+                                        cardLinkFront="https://etwincorp.com/P3_19072021"
+                                        />
+                                    <!-- GROUPOMANIA -->
+                                        <ProjectCard 
+                                            title="Groupomania" 
+                                            image="groupomania.gif"
+                                            descriptionHtml='This is the big Project of the training I did at
                         <a href="https://openclassrooms.com/fr/" target="_blank"
                                 class="link text-primary">Openclassrooms</a>. The project was to create an internal social
                             network
@@ -139,31 +139,31 @@
                             features: authorization levels, modification of
                             profiles, several MIME types of content, comments and
                             more...'
-                            cardDescription="This is my graduating project, I made an API and the
+                                cardDescription="This is my graduating project, I made an API and the
                                                     Frontend of this internal social network. It
                                                     includes comments and searches features as well as
                                                     administration functionalities"
-                                        :technologies= '["node.svg", "sql.svg", "react.svg","swagger.svg", "docker.svg"]'
-                                        cardLinkFront="https://etwincorp.com/frontestG"
-                                        cardLinkBack="https://github.com/DamienLopvet/Groupomania-frontend"
-                                        />
-                                              <!--FACE RECOGNITION-->  
-                                    <ProjectCard 
-                                        title="Face recognition" 
-                                        image="faceRecognition.jpg"
-                                        descriptionHtml=' This project is an attempt to implement a AI API. There
+                                            :technologies= '["node.svg", "sql.svg", "react.svg", "swagger.svg", "docker.svg"]'
+                                            cardLinkFront="https://etwincorp.com/frontestG"
+                                            cardLinkBack="https://github.com/DamienLopvet/Groupomania-frontend"
+                                            />
+                                                  <!--FACE RECOGNITION-->  
+                                        <ProjectCard 
+                                            title="Face recognition" 
+                                            image="faceRecognition.jpg"
+                                            descriptionHtml=' This project is an attempt to implement a AI API. There
                                             is a debat about face recognition and privacy but it
                                             will be used more and more.'
-                            cardDescription="This project is an attempt to implement a AI API."
-                                        :technologies= '["node.svg", "vue.svg", "faceapi.svg"]'
-                                        cardLinkFront="https://etwincorp.com/faceRecognition"
-                                        />
+                                cardDescription="This project is an attempt to implement a AI API."
+                                            :technologies= '["node.svg", "vue.svg", "faceapi.svg"]'
+                                            cardLinkFront="https://etwincorp.com/faceRecognition"
+                                            />
 
                               
                                
-                            </div>
-                            <div>
-                                <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="work">
+                                </div>
+                                <div>
+                                        <h2 class="sticky-top w-100 pt-3 pb-2 mb-4 section-title" id="work">
                                     In a professionnal context
                                 </h2>
                                 <!-- JHG LIGHTBOXES -->
@@ -611,7 +611,7 @@ main{
     .flex-auto {
         flex: auto;
     }
-    
+   
     .card {
         min-width: 250px;
         outline-style: solid;
@@ -641,7 +641,7 @@ main{
     .card-logos img {
         transition: translate 1000ms;
     }
-    
+
     .card-logos img:hover {
         translate: 0 -5px;
         transition: translate 200ms;
@@ -649,6 +649,9 @@ main{
     
     .nav-link:hover {
         color: #abb4bb !important;
+    }
+    .nav-link {
+        color: white!important;
     }
     
     .logo {
@@ -722,7 +725,7 @@ main{
             aspect-ratio: 1/1;
         }
     
-        .card-left {
+.card-left {
             translate: -300px;
             opacity: 0;
             transition: all 400ms ease-in-out;
@@ -751,7 +754,7 @@ main{
         border-bottom-right-radius: 12rem;
     }
     
-    .v-enter-active,
+.v-enter-active,
     .v-leave-active {
         transition: opacity 0.5s ease;
     }
