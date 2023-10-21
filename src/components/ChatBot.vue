@@ -1,7 +1,7 @@
 <template>
     <div class="chatbot">
 
-        <img :src="chatbulle" id="chatbot_open" data-open-modal v-on:click="handleChatModal" />
+        <img src="../assets/chatbulle.png" id="chatbot_open" alt="open chat bot" data-open-modal v-on:click="handleChatModal" />
         <dialog class="chatbot-dialog" data-modal>
             <span id="close_chat" data-close-modal v-on:click="handleChatModal">X</span>
             <div class="chatData" v-for="el in chatData" :key="el">
@@ -157,7 +157,7 @@ export default {
     },
     created() {
         axios.get('https://chatbot-whjg.onrender.com/').then(() => {
-            this.openModal()
+            console.log('chatbot is up');
         }).catch((e) => console.log(e))
         //window.addEventListener("beforeunload", this.sendDataToMail());
     }

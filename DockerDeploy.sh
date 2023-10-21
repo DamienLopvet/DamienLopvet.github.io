@@ -5,7 +5,7 @@ set -e
 
 docker build -t portfolio:deploy .
 
-docker run --rm -it -v /home/damien/work/docker_projects/DamienLopvet.github.io/dist:/app/dist portfolio:deploy run build
+docker run --rm -it -v /Users/damien/Documents/work/DamienLopvet.github.io/dist:/app/dist portfolio:deploy run build
 
 # Add CNAME into dist Folder
 cp CNAME ./dist
