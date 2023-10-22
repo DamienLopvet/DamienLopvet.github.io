@@ -37,7 +37,7 @@ export default {
     class="card-container mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
     <div class="growing-box d-none d-sm-block"></div>
 
-    <div class="m-3 align-self-center col-7 d-none d-sm-block text-start flex-auto  text-black">
+    <div class="m-3 align-self-center col-6 col-lg-8 d-none d-sm-block text-start flex-auto  text-black">
       <h3 class="mb-3">{{ title }}</h3>
       <p v-html="descriptionHtml"></p>
     </div>
@@ -81,12 +81,18 @@ export default {
   outline-color: #0000003d;
   outline-width: 1px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0%);
+  min-height:430px;
+ 
 }
 
 .card-image {
   overflow: hidden;
 }
-
+.card-body{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .card .card-image img {
   transition: 400ms transform ease-in-out;
 }

@@ -3,7 +3,7 @@
     <a href="#top"><img class="logo shadow" src="../assets/logo.png" alt="logo" width="80" /></a>
     <!-- HERO SECTION -->
 
-    <div class="container col-xxl-8 py-5 overflow-hidden" id="top">
+    <div class="container col-xxl-8 pt-5 overflow-hidden" id="top">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-lg-6 mx-auto heroimg-container">
                 <img src="../assets/hero-color.webp" width="532" windowsheight="357"
@@ -59,7 +59,7 @@
         </div>
     </div>
     <transition><a href="#top" class="btn btn-dark back-to-top mx-1" v-if="scrollpx > 4850">to top</a></transition>
-
+    <Stacks />
     <hr />
     <!-- MY WORK SECTION -->
    
@@ -99,29 +99,10 @@
                         on their smartphone."
                                         cardDescription="I needed a user friendly interface to set up
                                 google calendar events"
-                                        :technologies= '["node.svg", "react.svg", "taillwind.svg", "GgAPI.png", "docker.svg"]'
+                                        :technologies= '["node.svg", "react.svg", "tailwind.svg", "GgAPI.png", "docker.svg"]'
                                         cardLinkFront="https://etwincorp.com/resatest"
                                         />
-                                        <!-- OH MY FOOD -->
-                                         <ProjectCard  
-                                    title="Oh my food !!" 
-                                    image="OhmyFood.gif"
-                                    descriptionHtml="The goal of these pages was to create advanced CSS
-                        animations.
-                        <br />
-                        Mobile first, this app needed a load spinner while data
-                        travels throught the web . Discreet animations make the user experience dynamic. This was the occasion in wich I had
-                        to dive into key-frames and CSS tricks...
-                        <br />The project was also about building highly
-                        maintainable code using SCSS with
-                        <a href='https://sass-lang.com/' target='_blank' class='link text-primary'>
-                                SASS</a> . Very exciting!!"
-                                    cardDescription="This training project asks me to set a mobile
-                                     first frontend with advanced CSS animations. The
-                                desktop rendering was mine"
-                                        :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
-                                        cardLinkFront="https://etwincorp.com/P3_19072021"
-                                        />
+                                       
                                     <!-- GROUPOMANIA -->
                                         <ProjectCard 
                                             title="Groupomania" 
@@ -158,12 +139,31 @@
                                             :technologies= '["node.svg", "vue.svg", "faceapi.svg"]'
                                             cardLinkFront="https://etwincorp.com/faceRecognition"
                                             />
-
+     <!-- OH MY FOOD -->
+                                             <ProjectCard  
+                                        title="Oh my food !!" 
+                                        image="OhmyFood.gif"
+                                        descriptionHtml="The goal of these pages was to create advanced CSS
+                        animations.
+                        <br />
+                        Mobile first, this app needed a load spinner while data
+                        travels throught the web . Discreet animations make the user experience dynamic. This was the occasion in wich I had
+                        to dive into key-frames and CSS tricks...
+                        <br />The project was also about building highly
+                        maintainable code using SCSS with
+                        <a href='https://sass-lang.com/' target='_blank' class='link text-primary'>
+                                SASS</a> . Very exciting!!"
+                                        cardDescription="This training project asks me to set a mobile
+                                     first frontend with advanced CSS animations. The
+                                desktop rendering was mine"
+                                            :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
+                                            cardLinkFront="https://etwincorp.com/P3_19072021"
+                                            />
                               
                                
                                 </div>
-                                <div>
-                                        <h2 class="sticky-top w-100 pt-3 pb-2 mb-4 section-title" id="work">
+                                <div id="work">
+                                        <h2 class="sticky-top w-100 pt-3 pb-2 mb-4 section-title" >
                                     In a professionnal context
                                 </h2>
                                 <!-- JHG LIGHTBOXES -->
@@ -316,11 +316,13 @@
 
 <script>
 import axios from "axios";
-            import ProjectCard from "./ProjetcCard.vue";
+import ProjectCard from "./ProjetcCard.vue";
+import Stacks from "./Stacks.vue";
 export default {
     name: "HelloWorld",
                 components: {
-                                   ProjectCard,
+                    ProjectCard,
+                    Stacks
                                },
                    data() {
                        return {
@@ -608,6 +610,9 @@ main{
         margin: 0 10px;
     }
     
+    #work{
+        margin-top: 100px;
+    }
     .flex-auto {
         flex: auto;
     }
