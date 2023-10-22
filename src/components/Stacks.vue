@@ -9,11 +9,13 @@ export default {
                 'javascript.svg',
                 'php.svg',
                 'node.svg',
+                'swagger.svg',
                 'vue.svg',
                 'react.svg',
                 'sql.svg',
                 'mongoDb.svg',
                 'git.svg',
+                'gitlab.svg',
                 'docker.svg',
                 'kubernetes.svg',
                 'aws.svg',
@@ -26,7 +28,8 @@ export default {
         }
     },
     methods: {
-      pauseAnimation() {
+        pauseAnimation() {
+        console.log(this.numberOfSlides);
             const elements = document.querySelectorAll(".carousel__slide");
             elements.forEach((el) => {
                 el.style.animationPlayState = "paused";
@@ -46,6 +49,7 @@ export default {
             return Array.from({ length: timesToDuplicate }, () => this.stacks).flat();
         },
     },
+   
 }
 
 
@@ -90,7 +94,7 @@ export default {
 }
 
 :root {
-    --no-of-slides: 17;
+    --no-of-slides:19;
     --slides-in-view: 14;
     --slide-width: 70px;
     --slide-height: 70px;
@@ -99,8 +103,11 @@ export default {
 
 .carousel {
     overflow: hidden;
-    width: calc(2 * var(--no-of-slides));
-    margin-bottom:50px
+    width: 80vw;
+    margin-bottom:50px;
+    margin-inline: auto;
+    max-width:fit-content;
+
 }
 
 .carousel__wrapper {
@@ -109,7 +116,6 @@ export default {
     width: calc(var(--slides-in-view) * var(--slide-width));
     overflow: hidden;
     margin-inline: auto;
-    position: relative;
 }
 
 .carousel__wrapper::before {
@@ -173,9 +179,11 @@ export default {
     0% {
         transform: translateX(0);
     }
+   
 
     100% {
         transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+       
     }
 }
 </style>

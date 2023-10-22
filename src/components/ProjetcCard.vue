@@ -34,21 +34,21 @@ export default {
 </script>
 <template>
   <div
-    class="card-container mb-3 d-flex flex-row justify-content-center justify-content-sm-start col-xxl-8 rounded container bg-light py-5">
+    class="card-container mb-3 d-flex flex-row justify-content-center justify-content-lg-start col-xxl-8 rounded container bg-light py-5">
     <div class="growing-box d-none d-sm-block"></div>
 
-    <div class="m-3 align-self-center col-6 col-lg-8 d-none d-sm-block text-start flex-auto  text-black">
+    <div class="m-3 align-self-center col-6 col-lg-7 d-none d-lg-block text-start flex-auto  text-black">
       <h3 class="mb-3">{{ title }}</h3>
       <p v-html="descriptionHtml"></p>
     </div>
     <!-- card -->
-    <div class="card-right card m-3 my-3 border-4 border-white" style="width: 25rem">
+    <div class="card m-3 my-3 border-4 border-white" style="width: 25rem">
       <div class="card-image rounded border border-primary">
         <img :src="require('../assets/' + image)" alt="oh-my-food-screenshot" style="width: 100%" loading="lazy">
       </div>
       <div class="card-body">
-        <h3 class="card-title d-block d-sm-none">{{ title }}</h3>
-        <p class="card-text d-block d-sm-none">
+        <h3 class="card-title d-block d-lg-none">{{ title }}</h3>
+        <p class="card-text d-block d-lg-none">
           {{ cardDescription }}
         </p>
         <hr class=" d-block d-sm-none" />
@@ -196,20 +196,19 @@ export default {
     aspect-ratio: 1/1;
   }
 
-  .card-left {
-    translate: -300px;
-    opacity: 0;
-    transition: all 400ms ease-in-out;
-  }
+ .card-container > .card{
+            transition: all 400ms ease-in-out;
+        }
+ .card-container:nth-child(even) > .card{
+            translate: -300px;
+        }
+ .card-container:nth-child(odd) > .card{
+            translate: 300px;
+        }
 
-  .card-right {
-    translate: 300px;
-    opacity: 0;
-  transition: all 400ms ease-in-out;
-}
 
   .show {
-    translate: 0;
+    translate: 0!important;
     opacity: 1;
   }
 }
@@ -243,7 +242,6 @@ export default {
   transform-origin: top;
   z-index: -1;
   background-color: trabsparent;
-  border: 1px solid grey;
   scale: 1;
   backdrop-filter: blur(4px);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0%);

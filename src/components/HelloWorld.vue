@@ -1,73 +1,73 @@
 <template>
     <!-- LOGO -->
-    <a href="#top"><img class="logo shadow" src="../assets/logo.png" alt="logo" width="80" /></a>
-    <!-- HERO SECTION -->
+                        <a href="#top"><img class="logo" src="../assets/logo.png" alt="logo" width="80" /></a>
+                    <!-- HERO SECTION -->
 
-    <div class="container col-xxl-8 pt-5 overflow-hidden" id="top">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-lg-6 mx-auto heroimg-container">
-                <img src="../assets/hero-color.webp" width="532" windowsheight="357"
-                    class="heroimg d-block mx-auto img-fluid" alt="hero image" />
-            </div>
-            <div class="col-lg-6 text-lg-start mt-3 mt-sm-5">
-                <div class="lc-block mb-3">
-                    <div editable="rich">
-                        <h1 class="fw-bold display-5 pt-4">Damien Lopvet</h1>
-                        <h2>Fullstack developer</h2>
-                    </div>
-                </div>
+                    <div class="container col-xxl-8 pt-5 overflow-hidden" id="top">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div class="col-10 col-lg-6 mx-auto heroimg-container">
+                                <img src="../assets/hero-color.webp" width="532" windowsheight="357"
+                                    class="heroimg d-block mx-auto img-fluid" alt="hero image" />
+                            </div>
+                            <div class="col-lg-6 text-lg-start mt-3 mt-sm-5">
+                                <div class="lc-block mb-3">
+                                    <div editable="rich">
+                                        <h1 class="fw-bold display-5 pt-4">Damien Lopvet</h1>
+                                        <h2>Fullstack developer</h2>
+                                    </div>
+                                </div>
 
-                <div class="lc-block mb-3">
-                    <div editable="rich">
-                        <p class="lead">
-                            Mail:
-                            <a href="mailto:etwincorp@gmail.com" class="link text-primary">etwincorp@gmail.com</a>
-                            <br />
-                            Tel:
-                            <a href="tel:+41-78-251-95-80 " class="link text-primary">+41.78.251.95.80
-                            </a>
-                            <br />
-                            Location: Geneva
-                            <br />
-                            linkedIn :
-                            <a href="https://www.linkedin.com/in/Damien-Lopvet/" target="_blank" class="link text-primary">Damien
-                                Lopvet</a>
-                        </p>
-                        <p class="lead">
-                            I am a curious, passionate, and meticulous developer
-                            who creates modern and functional websites with
-                            great attention to detail. I enjoy working with my
-                            clients to understand their unique needs and deliver
-                            custom solutions that help them achieve their online
-                            goals. I specialize in creating websites for small
-                            and medium sized businesses, startups, and
-                            individual entrepreneurs. My expertise includes
-                            responsive website design, search engine
-                            optimization, security and accessibility. I am also
-                            familiar with a variety of web technologies
-                            including React.js, Vue.js, HTML, CSS, JavaScript,
-                            PHP, and WordPress.
-                        </p>
-                    </div>
-                </div>
+                                    <div class="lc-block mb-3">
+                                        <div editable="rich">
+                                            <p class="lead">
+                                                Mail:
+                                                <a href="mailto:etwincorp@gmail.com" class="link text-primary">etwincorp@gmail.com</a>
+                                                <br />
+                                                Tel:
+                                                <a href="tel:+41-78-251-95-80 " class="link text-primary">+41.78.251.95.80
+                                                </a>
+                                                <br />
+                                                Location: Geneva
+                                                <br />
+                                                linkedIn :
+                                                <a href="https://www.linkedin.com/in/Damien-Lopvet/" target="_blank" class="link text-primary">Damien
+                                                    Lopvet</a>
+                                            </p>
+                                            <p class="lead">
+                                                I am a curious, passionate, and meticulous developer
+                                                who creates modern and functional websites with
+                                                great attention to detail. I enjoy working with my
+                                                clients to understand their unique needs and deliver
+                                                custom solutions that help them achieve their online
+                                                goals. I specialize in creating websites for small
+                                                and medium sized businesses, startups, and
+                                                individual entrepreneurs. My expertise includes
+                                                responsive website design, search engine
+                                                optimization, security and accessibility. I am also
+                                                familiar with a variety of web technologies
+                                                including React.js, Vue.js, HTML, CSS, JavaScript,
+                                                PHP, and WordPress.
+                                            </p>
+                                        </div>
+                                    </div>
 
-                <div class="lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
-                    <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professionnal projects</a>
-                    <a class="btn btn-outline-secondary px-4" href="#home" role="button">Own projects</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <transition><a href="#top" class="btn btn-dark back-to-top mx-1" v-if="scrollpx > 4850">to top</a></transition>
-    <Stacks />
-    <hr />
-    <!-- MY WORK SECTION -->
+                                    <div class="lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
+                                        <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professionnal projects</a>
+                                        <a class="btn btn-outline-secondary px-4" href="#home" role="button">Personnal projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <transition><a href="#top" class="btn btn-dark back-to-top mx-1" v-if="scrollpx > 4850">to top</a></transition>
+                        <Stacks />
+                        <hr />
+                        <!-- MY WORK SECTION -->
    
-    <main>
-                <div id="home" class="d-flex flex-column flex-wrap align-items-center gap-4">
-                <div class="scroll-tracker"></div>
-                <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">
-                    Own projects
+                        <main>
+                                    <div id="home" class="d-flex flex-column flex-wrap align-items-center gap-4">
+                                    <div class="scroll-tracker"></div>
+                                    <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">
+                                    Personnal projects
                 </h2>
                   <!-- MULTIPLE STOPWATCH -->
                                           <ProjectCard 
@@ -482,6 +482,7 @@ export default {
 
                                if (fontSize <= 42) {
                                    element.style.fontSize = "" + fontSize + "px";
+
                                }
                            } else {
                                fontSize = 33;
@@ -706,7 +707,10 @@ main{
         outline-color: white;
         outline-width: 1px;
     }
-    
+    .show {
+    translate: 0;
+    opacity: 1;
+  }
     .card-link {
         all: unset;
     }
@@ -730,20 +734,19 @@ main{
             aspect-ratio: 1/1;
         }
     
-.card-left {
+        .card-container:nth-child(even) + .card{
+            translate: 300px;
+            opacity: 0;
+            transition: all 400ms ease-in-out;
+        }
+        .card-container:nth-child(odd) + .card{
             translate: -300px;
             opacity: 0;
             transition: all 400ms ease-in-out;
         }
     
-        .card-right {
-            translate: 300px;
-            opacity: 0;
-            transition: all 400ms ease-in-out;
-        }
-    
         .show {
-            translate: 0;
+            translate: 0!important;
             opacity: 1;
         }
     }
@@ -784,10 +787,11 @@ main{
     }
     
     .section-title {
-        background-color: #fffffff3;
-        backdrop-filter:blur(3px);
+        background-color: #ffffff6d;
+        backdrop-filter:blur(10px);
         top: -1px;
         transition: box-shadow 500ms;
+    
     }
     
     #home {
