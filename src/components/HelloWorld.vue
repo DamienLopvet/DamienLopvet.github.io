@@ -67,13 +67,13 @@
                                     <div id="home" class="d-flex flex-column flex-wrap align-items-center gap-4">
                                     <div class="scroll-tracker"></div>
                                     <h2 class="sticky-top w-100 section-title" id="own">
-                                    Personnal projects
-                </h2>
-                  <!-- MULTIPLE STOPWATCH -->
-                                          <ProjectCard 
-                                                    title="Multiple Stopwatches" 
-                                                    image="stopWatch.gif"
-                                                    descriptionHtml="At first the idea was to repeat the single stopwatch
+                                            Personal projects
+                    </h2>
+                      <!-- MULTIPLE STOPWATCH -->
+                                              <ProjectCard 
+                                                        title="Multiple Stopwatches" 
+                                                        image="stopWatch.gif"
+                                                        descriptionHtml="At first the idea was to repeat the single stopwatch
                                             project as a Vue.js training, but in the meantime I
                                             challenged myself to make an app with multiple
                                             stopwatches . It's related to an API that allows us to
@@ -83,31 +83,31 @@
                                                     class='link text-primary'>
                                                     look</a>
                                                 at it!!"
-                                        cardDescription=" This app is for those who need to measure their time
+                                            cardDescription=" This app is for those who need to measure their time
                                                     on different projects and devices"
-                                                    :technologies= '["node.svg", "vue.svg", "local-storage.svg", "mongoDb.svg", "bashScript.svg"]'
-                                                    cardLinkFront="https://etwincorp.com/multiple-chronos"
-                                                    />
+                                                        :technologies= '["node.svg", "vue.svg", "local-storage.svg", "mongoDb.svg", "bashScript.svg"]'
+                                                        cardLinkFront="https://etwincorp.com/multiple-chronos"
+                                                        />
             
-                                    <!--  RESATEST -->
-                                        <ProjectCard  
-                                        title="Reservation Interface" 
-                                        image="resatest.gif"
-                                        descriptionHtml="I needed a user friendly interface to set up google
+                                        <!--  RESATEST -->
+                                            <ProjectCard  
+                                            title="Reservation Interface" 
+                                            image="resatest.gif"
+                                            descriptionHtml="I needed a user friendly interface to set up google
                         calendar events. This mobile first designed interface
                         allows users to create and retreive events with one hand
                         on their smartphone."
-                                        cardDescription="I needed a user friendly interface to set up
+                                            cardDescription="I needed a user friendly interface to set up
                                 google calendar events"
-                                        :technologies= '["node.svg", "react.svg", "tailwind.svg", "GgAPI.png", "docker.svg"]'
-                                        cardLinkFront="https://etwincorp.com/resatest"
-                                        />
+                                            :technologies= '["node.svg", "react.svg", "tailwind.svg", "GgAPI.png", "docker.svg"]'
+                                            cardLinkFront="https://etwincorp.com/resatest"
+                                            />
                                        
-                                    <!-- GROUPOMANIA -->
-                                        <ProjectCard 
-                                            title="Groupomania" 
-                                            image="groupomania.gif"
-                                            descriptionHtml='This is the big Project of the training I did at
+                                        <!-- GROUPOMANIA -->
+                                            <ProjectCard 
+                                                title="Groupomania" 
+                                                image="groupomania.gif"
+                                                descriptionHtml='This is the big Project of the training I did at
                         <a href="https://openclassrooms.com/fr/" target="_blank"
                                 class="link text-primary">Openclassrooms</a>. The project was to create an internal social
                             network
@@ -120,30 +120,30 @@
                             features: authorization levels, modification of
                             profiles, several MIME types of content, comments and
                             more...'
-                                cardDescription="This is my graduating project, I made an API and the
+                                    cardDescription="This is my graduating project, I made an API and the
                                                     Frontend of this internal social network. It
                                                     includes comments and searches features as well as
                                                     administration functionalities"
-                                            :technologies= '["node.svg", "sql.svg", "react.svg", "swagger.svg", "docker.svg"]'
-                                            cardLinkFront="https://etwincorp.com/frontestG"
-                                            cardLinkBack="https://github.com/DamienLopvet/Groupomania-frontend"
-                                            />
-                                                  <!--FACE RECOGNITION-->  
-                                        <ProjectCard 
-                                            title="Face recognition" 
-                                            image="faceRecognition.jpg"
-                                            descriptionHtml=' This project is an attempt to implement a AI API. There
+                                                :technologies= '["node.svg", "sql.svg", "react.svg", "swagger.svg", "docker.svg"]'
+                                                cardLinkFront="https://etwincorp.com/frontestG"
+                                                cardLinkBack="https://github.com/DamienLopvet/Groupomania-frontend"
+                                                />
+                                                      <!--FACE RECOGNITION-->  
+                                            <ProjectCard 
+                                                title="Face recognition" 
+                                                image="faceRecognition.jpg"
+                                                descriptionHtml=' This project is an attempt to implement a AI API. There
                                             is a debat about face recognition and privacy but it
                                             will be used more and more.'
-                                cardDescription="This project is an attempt to implement a AI API."
-                                            :technologies= '["node.svg", "vue.svg", "faceapi.svg"]'
-                                            cardLinkFront="https://etwincorp.com/faceRecognition"
-                                            />
-     <!-- OH MY FOOD -->
-                                             <ProjectCard  
-                                        title="Oh my food !!" 
-                                        image="OhmyFood.gif"
-                                        descriptionHtml="The goal of these pages was to create advanced CSS
+                                    cardDescription="This project is an attempt to implement a AI API."
+                                                :technologies= '["node.svg", "vue.svg", "faceapi.svg"]'
+                                                cardLinkFront="https://etwincorp.com/faceRecognition"
+                                                />
+         <!-- OH MY FOOD -->
+                                                 <ProjectCard  
+                                            title="Oh my food !!" 
+                                            image="OhmyFood.gif"
+                                            descriptionHtml="The goal of these pages was to create advanced CSS
                         animations.
                         <br />
                         Mobile first, this app needed a load spinner while data
@@ -153,51 +153,51 @@
                         maintainable code using SCSS with
                         <a href='https://sass-lang.com/' target='_blank' class='link text-primary'>
                                 SASS</a> . Very exciting!!"
-                                        cardDescription="This training project asks me to set a mobile
+                                            cardDescription="This training project asks me to set a mobile
                                      first frontend with advanced CSS animations. The
                                 desktop rendering was mine"
-                                            :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
-                                            cardLinkFront="https://etwincorp.com/P3_19072021"
-                                            />
+                                                :technologies= '["node.svg", "javascript.svg", "sass.svg", "html.svg"]'
+                                                cardLinkFront="https://etwincorp.com/P3_19072021"
+                                                />
                               
                                
-                                </div>
-                                <div id="work">
-                                        <h2 class="sticky-top w-100 mb-4 section-title" >
-                                    In a professionnal context
-                                </h2>
-                                <!-- JHG LIGHTBOXES -->
-                                <ProjectCard 
-                                                title="Lightboxes" 
-                                                image="jhMediaGroup.webp"
-                                                descriptionHtml="During my internship at
+                                    </div>
+                                    <div id="work">
+                                            <h2 class="sticky-top w-100 mb-4 section-title" >
+                                        In a professional context
+                                    </h2>
+                                    <!-- JHG LIGHTBOXES -->
+                                    <ProjectCard 
+                                                    title="Lightboxes" 
+                                                    image="jhMediaGroup.webp"
+                                                    descriptionHtml="During my internship at
                                             <a href='https://jhmediagroup.com/' target='_blank' class='link text-primary'>jhMediaGroup</a>
                                                 I was asked to create a Lightbox feature on the
                                                 company's website. I found it fun and rewarding to
                                                 contribute with my new skills !!"
-                                    cardDescription=" This Lightbox feature I built with Js is useful on
+                                        cardDescription=" This Lightbox feature I built with Js is useful on
                                                     the 'homePage' and the 'company' page of jhMediaGroup's site"
-                                                :technologies= '["wordpress.svg", "javascript.svg"]'
-                                                cardLinkFront="https://jhmediagroup.com/"
-                                                />
-                                
-                                <!-- JHG PERFORMANCES -->
-                                <ProjectCard 
-                                                    title="Performances" 
-                                                    image="jhGperf.webp"
-                                                    descriptionHtml="During my internship at jhMediaGroup we needed to optimize the Performances of the company's
-                                            website. I used W3 total cache , and lazy-load images. I set up the optimization options in DIVI and I 'defer' or 'async' the Js scripts
-                                            on the DIVI integration section."
-                                        cardDescription="Increasing the performances of a website can be tricky, fortunately plugins and Js knowledge are helpful"
-                                                    :technologies= '["wordpress.svg", "javascript.svg", "divi.svg"]'
+                                                    :technologies= '["wordpress.svg", "javascript.svg"]'
                                                     cardLinkFront="https://jhmediagroup.com/"
                                                     />
                                 
-                                <!-- ACCESSIBILIY -->
-                                <ProjectCard 
-                                                    title="Accessibility" 
-                                                    image="jhgAccessibility.webp"
-                                                    descriptionHtml="This
+                                    <!-- JHG PERFORMANCES -->
+                                    <ProjectCard 
+                                                        title="Performances" 
+                                                        image="jhGperf.webp"
+                                                        descriptionHtml="During my internship at jhMediaGroup we needed to optimize the Performances of the company's
+                                            website. I used W3 total cache , and lazy-load images. I set up the optimization options in DIVI and I 'defer' or 'async' the Js scripts
+                                            on the DIVI integration section."
+                                            cardDescription="Increasing the performances of a website can be tricky, fortunately plugins and Js knowledge are helpful"
+                                                        :technologies= '["wordpress.svg", "javascript.svg", "divi.svg"]'
+                                                        cardLinkFront="https://jhmediagroup.com/"
+                                                        />
+                                
+                                    <!-- ACCESSIBILIY -->
+                                    <ProjectCard 
+                                                        title="Accessibility" 
+                                                        image="jhgAccessibility.webp"
+                                                        descriptionHtml="This
                                             <a href='https://jhmediagroup.com/' target='_blank' class='link text-primary'>website</a>
                                                 needed to respect the American Ada compliance around
                                                 rules of accessibilities. As it was a Wordpress site, I
@@ -206,17 +206,17 @@
                                                     us</a>
                                                 form.<br />
                                                 Powerfull Js !!"
-                                        cardDescription=" As we refreshed the company's website we needed to
+                                            cardDescription=" As we refreshed the company's website we needed to
                                                 make some changes to fit the ADA compliance requirements"
-                                                    :technologies= '["wordpress.svg", "javascript.svg", "wave.svg"]'
-                                                    cardLinkFront="https://jhmediagroup.com/"
-                                                    />
+                                                        :technologies= '["wordpress.svg", "javascript.svg", "wave.svg"]'
+                                                        cardLinkFront="https://jhmediagroup.com/"
+                                                        />
                                
-                                <!-- TEMPTRACKER -->
-                                <ProjectCard 
-                                                    title="Temptracker" 
-                                                    image="tempTracker.webp"
-                                                    descriptionHtml="The best part of my internship at
+                                    <!-- TEMPTRACKER -->
+                                    <ProjectCard 
+                                                        title="Temptracker" 
+                                                        image="tempTracker.webp"
+                                                        descriptionHtml="The best part of my internship at
                                             <a href='https://jhmediagroup.com/' target='_blank' class='link text-primary'>jhMediaGroup</a>
                                                 was to work on a temperature tracking app scaled for
                                                 large companies!! I learned a lot working both on
@@ -224,82 +224,82 @@
                                             huge amount of data.
                                             <br />It was great to work on ticketing using the
                                             confluence suite as well.Unfortunately, with the end of the Covid crisis, the app is no longer available (but this is a goode news, however )."
-                                        cardDescription="During my internship I spent a lot of time working
+                                            cardDescription="During my internship I spent a lot of time working
                                             on this app. This was amazing, I learned a lot"
-                                                    :technologies= '[ "laravel.svg","sql.svg","vue.svg", "docker.svg" ]'
-                                                    cardLinkFront="https://jhmediagroup.com/"
-                                                    />
+                                                        :technologies= '["laravel.svg", "sql.svg", "vue.svg", "docker.svg"]'
+                                                        cardLinkFront="https://jhmediagroup.com/"
+                                                        />
                                
-                    </div>
-                    <div></div>
+                        </div>
+                        <div></div>
 
-                    <!-- Modal Contact-me -->
-                    <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3 class="modal-title" id="exampleModalLabel">
-                                        Contact-me
-                                    </h3>
-                                    <button type="button" class="btn-close" id="closeModal" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form id="contact-form" @submit.prevent="handleFormSubmit">
+                        <!-- Modal Contact-me -->
+                        <div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalLabel">
+                                            Contact-me
+                                        </h3>
+                                        <button type="button" class="btn-close" id="closeModal" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="contact-form" @submit.prevent="handleFormSubmit">
+                                            <div class="mb-3">
+                                            <label for="contactName" class="form-label"></label>
+                                            <input type="text" class="form-control" placeholder="Name" id="contactName"
+                                                v-model.trim="contactName" required="" />
+                                        </div>
                                         <div class="mb-3">
-                                        <label for="contactName" class="form-label"></label>
-                                        <input type="text" class="form-control" placeholder="Name" id="contactName"
-                                            v-model.trim="contactName" required="" />
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="contactInfo" class="form-label"></label>
-                                        <input type="email" placeholder="Email" class="form-control" id="contactInfo"
-                                            v-model.trim="contactInfo" required />
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label"></label>
-                                        <textarea class="form-control" placeholder="Type your message here..." rows="3" id="message"
-                                            v-model.trim="message" maxlength="350" required></textarea>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <transition>
-                                            <p v-if="messageSent" class="fw-bold text-success flex-auto">
-                                                Message sent successfully !!
+                                            <label for="contactInfo" class="form-label"></label>
+                                            <input type="email" placeholder="Email" class="form-control" id="contactInfo"
+                                                v-model.trim="contactInfo" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label"></label>
+                                            <textarea class="form-control" placeholder="Type your message here..." rows="3" id="message"
+                                                v-model.trim="message" maxlength="350" required></textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <transition>
+                                                <p v-if="messageSent" class="fw-bold text-success flex-auto">
+                                                    Message sent successfully !!
+                                                </p>
+
+                                            </transition>
+                                            <transition>
+                                                <p v-if="messageError" class="fw-bold text-danger flex-auto">
+                                                    Oops there was a problem sending the messsage !!
+                                                please try again later.
                                             </p>
 
                                         </transition>
-                                        <transition>
-                                            <p v-if="messageError" class="fw-bold text-danger flex-auto">
-                                                Oops there was a problem sending the messsage !!
-                                            please try again later.
-                                        </p>
-
-                                    </transition>
-                                    <button type="submit" class="btn btn-primary" :disabled="contactName === '' ||
-                                        contactInfo === '' ||
-                                        message === ''
-                                        " ref="submitForm">
-                                        {{ isactive ? "Sending" : "send" }}
-                                        <span :class="{
-                                            'spinner-grow spinner-grow-sm':
-                                                isactive,
-                                        }" role="status" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                            </form>
+                                        <button type="submit" class="btn btn-primary" :disabled="contactName === '' ||
+                                            contactInfo === '' ||
+                                            message === ''
+                                            " ref="submitForm">
+                                            {{ isactive ? "Sending" : "send" }}
+                                            <span :class="{
+                                                'spinner-grow spinner-grow-sm':
+                                                    isactive,
+                                            }" role="status" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <footer class="py-3 mt-4 bg-dark">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link px-2 text-muted">My own projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#work" class="nav-link px-2 text-muted">Professionnal projects</a>
+                <footer class="py-3 mt-4 bg-dark">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link px-2 text-muted">My own projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                                <a href="#work" class="nav-link px-2 text-muted">Professional projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal"
