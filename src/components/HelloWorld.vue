@@ -619,7 +619,7 @@ main{
         top: -1px;
         color:black;
         padding-top:1rem;
-        padding-bottom:1rem;
+        padding-bottom:1.2rem;
         transition: all 300ms;
         background-color: hwb(0 100% 0% / 0.427) ;
     }
