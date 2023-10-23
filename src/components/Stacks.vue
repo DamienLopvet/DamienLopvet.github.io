@@ -80,9 +80,9 @@ export default {
 #technologies-logos img {
     height: 30px;
     width: auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
-#technologies-logos img:hover, #technologies-logos img:hover + .icon-title{
+#technologies-logos img:hover + .icon-title{
     scale: 1.5;
     font-size: 12px;
 }
@@ -90,7 +90,7 @@ export default {
 .icon-title {
     font-size: 10px;
     color: black;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 :root {

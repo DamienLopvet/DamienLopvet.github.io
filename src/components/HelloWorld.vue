@@ -66,7 +66,7 @@
                         <main>
                                     <div id="home" class="d-flex flex-column flex-wrap align-items-center gap-4">
                                     <div class="scroll-tracker"></div>
-                                    <h2 class="sticky-top w-100 pt-3 pb-2 section-title" id="own">
+                                    <h2 class="sticky-top w-100 section-title" id="own">
                                     Personnal projects
                 </h2>
                   <!-- MULTIPLE STOPWATCH -->
@@ -163,7 +163,7 @@
                                
                                 </div>
                                 <div id="work">
-                                        <h2 class="sticky-top w-100 pt-3 pb-2 mb-4 section-title" >
+                                        <h2 class="sticky-top w-100 mb-4 section-title" >
                                     In a professionnal context
                                 </h2>
                                 <!-- JHG LIGHTBOXES -->
@@ -450,6 +450,10 @@ export default {
                                            "shadow",
                                            !entry.isIntersecting
                                        );
+                                       entry.target.classList.toggle(
+                                           "animate-title",
+                                           !entry.isIntersecting
+                                       );
                                    });
                                },
                                {
@@ -467,20 +471,20 @@ export default {
                            }
 
                            var distanceToTop =
-                               window.pageYOffset +
+                               window.scrollY +
                                element.getBoundingClientRect()?.top -
                                500;
                            var elementHeight = element.offsetHeight;
                            var scrollTop = document.documentElement.scrollTop;
 
                            if (window.innerWidth > 480) {
-                               var fontSize = 42;
+                               var fontSize = 33;
 
                                if (scrollTop > distanceToTop) {
                                    fontSize -= (scrollTop - distanceToTop) / elementHeight;
                                }
 
-                               if (fontSize <= 42) {
+                               if (fontSize <= 35) {
                                    element.style.fontSize = "" + fontSize + "px";
 
                                }
@@ -609,6 +613,19 @@ main{
     li {
         display: inline-block;
         margin: 0 10px;
+    }
+    .section-title{
+        backdrop-filter:blur(10px);
+        top: -1px;
+        color:black;
+        padding-top:1rem;
+        padding-bottom:1rem;
+        transition: all 300ms;
+        background-color: hwb(0 100% 0% / 0.427) ;
+    }
+    .animate-title{
+        color:white;
+        background-color: hwb(0 35% 65% / 0.427);
     }
     
     #work{
@@ -786,13 +803,7 @@ main{
         transition: all 400ms;
     }
     
-    .section-title {
-        background-color: #ffffff6d;
-        backdrop-filter:blur(10px);
-        top: -1px;
-        transition: box-shadow 500ms;
-    
-    }
+  
     
     #home {
         z-index: 999;
