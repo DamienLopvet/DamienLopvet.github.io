@@ -52,8 +52,8 @@
                                     </div>
 
                                     <div class="lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
-                                        <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professionnal projects</a>
-                                        <a class="btn btn-outline-secondary px-4" href="#home" role="button">Personnal projects</a>
+                                        <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professional projects</a>
+                                        <a class="btn btn-outline-secondary px-4" href="#home" role="button">Personal projects</a>
                                     </div>
                                 </div>
                             </div>
