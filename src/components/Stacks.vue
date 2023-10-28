@@ -12,6 +12,7 @@ export default {
                 'swagger.svg',
                 'vue.svg',
                 'react.svg',
+                'next-js.svg',
                 'sql.svg',
                 'mongoDb.svg',
                 'git.svg',
@@ -76,7 +77,13 @@ export default {
     </div>
 </template>
 <style>
-
+:root {
+    --no-of-slides:20;
+    --slides-in-view: 14;
+    --slide-width: 70px;
+    --slide-height: 70px;
+    --iteration-time: 20s;
+}
 #technologies-logos img {
     height: 30px;
     width: auto;
@@ -93,13 +100,7 @@ export default {
     transition: all 0.1s ease-in-out;
 }
 
-:root {
-    --no-of-slides:19;
-    --slides-in-view: 14;
-    --slide-width: 70px;
-    --slide-height: 70px;
-    --iteration-time: 20s;
-}
+
 
 .carousel {
     overflow: hidden;

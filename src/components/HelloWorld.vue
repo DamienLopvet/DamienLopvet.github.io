@@ -166,6 +166,26 @@
                                             <h2 class="sticky-top w-100 mb-4 section-title" >
                                         In a professional context
                                     </h2>
+                                    
+                                    <!-- Stunify -->
+                                    <ProjectCard 
+                                                    title="Stunify" 
+                                                    image="stunify.gif"
+                                                    descriptionHtml="The aim of Stunify is to connect people with esthetics professionals, this ambitious project will eventually bring together a mobile app and a website, an administration interface is planned for professionals to manage their team, their appointment diary and their cash register."
+                                        cardDescription=" The aim of stunify is to connect people with esthetics professionals, this ambitious project will eventually bring together a mobile app and a website"
+                                                    :technologies= '["react.svg", "next-js.svg", "tailwind.svg","GgAPI.png", "aws.svg", "mongoDb.svg", "docker.svg"]'
+                                                    cardLinkFront="http://staging.stunify.io/"
+                                                    nda="true"
+                                                    />
+                                                    <!-- Bugzfoody -->
+                                    <ProjectCard 
+                                                    title="Bugzfoody" 
+                                                    image="bugzFood.gif"
+                                                    descriptionHtml="BugzFoody is a French-based e-commerce platform that specializes in the sale of energy powder derived from insects. Committed to transparency and sustainability, the company sources its insect ingredients exclusively from French insect farms. From the procurement of raw materials to packaging and production, the entire process is carried out in France."
+                                        cardDescription="A French e-commerce platform offering insect-derived energy powder. They're committed to transparency and sustainability, sourcing from French insect farms and producing everything locally."
+                                                    :technologies= '["wordpress.svg", "divi.svg"]'
+                                                    cardLinkFront="https://bugzfoody.com/"
+                                                    />
                                     <!-- JHG LIGHTBOXES -->
                                     <ProjectCard 
                                                     title="Lightboxes" 

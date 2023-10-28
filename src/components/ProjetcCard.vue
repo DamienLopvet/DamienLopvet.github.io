@@ -28,13 +28,18 @@ export default {
     cardDescription: {
       type: String,
       required: true
+    },
+    nda: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
 </script>
 <template>
   <div
-    class="card-container mb-3 d-flex flex-row justify-content-center justify-content-lg-start col-xxl-8 rounded container bg-light py-5">
+    class="relative card-container mb-3 d-flex flex-row justify-content-center justify-content-lg-start col-xxl-8 rounded container bg-light py-5">
     <div class="growing-box d-none d-sm-block"></div>
 
     <div class="m-3 align-self-center col-6 col-lg-7 d-none d-lg-block text-start flex-auto  text-black">
@@ -70,7 +75,7 @@ export default {
       </div>
     </div>
 
-
+<div v-if="nda" class="nda"> </div>
   </div>
 </template>
 
@@ -246,5 +251,30 @@ export default {
   backdrop-filter: blur(4px);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0%);
   border-radius:10px;
+}
+.nda{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  border-radius:10px;
+  z-index: 1;
+}
+.nda::after
+{
+  content: "under NDA";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  z-index: 2;
+  background-color: #abb4bb;
+  padding:10px;
+  border-radius:10px
 }
 </style>
