@@ -476,12 +476,11 @@ export default {
                            if (scrollTop > distanceToTop) {
                                fontSize -= (scrollTop - distanceToTop) / elementHeight;
                                if (fontSize <= 25) return
-                               console.log('fontSize', fontSize);
                                } 
 
                                if (fontSize <= 33) {
-                                   element.style.fontSize = "" + fontSize + "px";
-                                  
+                                   element.style.fontSize = "" + fontSize.toFixed(1) + "px";
+                                  console.log(element.style.fontSize)
                                }
                            
                        },
@@ -605,7 +604,8 @@ main{
         padding-top:1rem;
         padding-bottom:1.2rem;
         transition: all 300ms;
-        background-color: hwb(0 100% 0% / 0.427) ;
+        background-color: hwb(0 100% 0% / 0.427);
+        transition:all 300ms
     }
    
     #work{
