@@ -12,7 +12,7 @@
                             <div class="col-lg-6 text-lg-start mt-3 mt-sm-5">
                                 <div class="lc-block mb-3">
                                     <div editable="rich">
-                                        <h1 class="fw-bold display-5 pt-4">Anais Lopvet</h1>
+                                        <h1 class="fw-bold display-5 pt-4">Damien Lopvet</h1>
                                         <h2>Fullstack developer</h2>
                                     </div>
                                 </div>
