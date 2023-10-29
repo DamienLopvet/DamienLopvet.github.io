@@ -1,7 +1,7 @@
 <template>
   <ChatBot />
   <HelloWorld/>
-  <Maintenance active="true" />
+    <div v-if="active" ><Maintenance/></div>
 </template>
 
 <script>
@@ -13,7 +13,12 @@ export default {
   components: {
     HelloWorld, ChatBot,
     Maintenance
-}
+  },
+  data() {
+    return {
+      active: false
+    }
+  },
 }
 </script>
 

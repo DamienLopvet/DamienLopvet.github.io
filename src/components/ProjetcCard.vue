@@ -39,7 +39,7 @@ export default {
 </script>
 <template>
   <div
-    class="relative card-container mb-3 d-flex flex-row justify-content-center justify-content-lg-start col-xxl-8 rounded container bg-light py-5">
+    class="relative card-container mb-3 d-flex flex-row justify-content-center justify-content-lg-start col-xxl-8 rounded container border bg-light py-5">
     <div class="growing-box d-none d-sm-block"></div>
 
     <div class="m-3 align-self-center col-6 col-lg-7 d-none d-lg-block text-start flex-auto  text-black">
@@ -49,7 +49,10 @@ export default {
     <!-- card -->
     <div class="card m-3 my-3 border-4 border-white" style="width: 25rem">
       <div class="card-image rounded border border-primary">
-        <img :src="require('../assets/' + image)" alt="oh-my-food-screenshot" style="width: 100%" loading="lazy">
+        <video v-if="image.split('.')[1] === 'webm'" style="width:100%" autoplay muted loop controls>
+        <source :src="require('../assets/' + image)" type="video/webm">
+        </video>
+        <img v-else :src="require('../assets/' + image)" :alt="'image of' + image" style="width:100%"/>
       </div>
       <div class="card-body">
         <h3 class="card-title d-block d-lg-none">{{ title }}</h3>
@@ -259,6 +262,7 @@ export default {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(5px);
+  background-color: #eeb6b62e;
   border-radius:10px;
   z-index: 1;
 }
@@ -269,7 +273,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   font-weight: 700;
   z-index: 2;

@@ -65,7 +65,7 @@ export default {
                 @mouseleave="resumeAnimation">
                         <div id="technologies-logos" v-for="(image, index) in duplicatedStacks" :key="index"
                             class="carousel__slide stacks-logos d-flex flex-column">
-                            <img class="carousel__image" :src="require('../assets/' + image)" width="40" alt="node.js"
+                            <img class="carousel__image" :src="require('../assets/' + image)" width="40" :alt="image"
                                 :aria-label="image.split('.')[0]" />
                             <span class="text-xs icon-title">{{ image.split('.')[0] }} </span>
                         </div>

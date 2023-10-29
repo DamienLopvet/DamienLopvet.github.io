@@ -283,4 +283,7 @@ form label img {
     .chatbot-dialog {
         max-width: 90%;
     }
+    .chatbot{
+        top:15px
+    }
 }</style>

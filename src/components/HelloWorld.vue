@@ -12,7 +12,7 @@
                             <div class="col-lg-6 text-lg-start mt-3 mt-sm-5">
                                 <div class="lc-block mb-3">
                                     <div editable="rich">
-                                        <h1 class="fw-bold display-5 pt-4">Damien Lopvet</h1>
+                                        <h1 class="fw-bold display-5 pt-4">Anais Lopvet</h1>
                                         <h2>Fullstack developer</h2>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                       <!-- MULTIPLE STOPWATCH -->
                                               <ProjectCard 
                                                         title="Multiple Stopwatches" 
-                                                        image="stopWatch.gif"
+                                                        image="stopWatch.webm"
                                                         descriptionHtml="At first the idea was to repeat the single stopwatch
                                             project as a Vue.js training, but in the meantime I
                                             challenged myself to make an app with multiple
@@ -92,7 +92,7 @@
                                         <!--  RESATEST -->
                                             <ProjectCard  
                                             title="Reservation Interface" 
-                                            image="resatest.gif"
+                                            image="resatest.webm"
                                             descriptionHtml="I needed a user friendly interface to set up google
                         calendar events. This mobile first designed interface
                         allows users to create and retreive events with one hand
@@ -106,7 +106,7 @@
                                         <!-- GROUPOMANIA -->
                                             <ProjectCard 
                                                 title="Groupomania" 
-                                                image="groupomania.gif"
+                                                image="groupomania.webm"
                                                 descriptionHtml='This is the big Project of the training I did at
                         <a href="https://openclassrooms.com/fr/" target="_blank"
                                 class="link text-primary">Openclassrooms</a>. The project was to create an internal social
@@ -142,7 +142,7 @@
          <!-- OH MY FOOD -->
                                                  <ProjectCard  
                                             title="Oh my food !!" 
-                                            image="OhmyFood.gif"
+                                            image="OhmyFood.webm"
                                             descriptionHtml="The goal of these pages was to create advanced CSS
                         animations.
                         <br />
@@ -164,13 +164,13 @@
                                     </div>
                                     <div id="work">
                                             <h2 class="sticky-top w-100 mb-4 section-title" >
-                                        In a professional context
+                                        Professional projects
                                     </h2>
                                     
                                     <!-- Stunify -->
                                     <ProjectCard 
                                                     title="Stunify" 
-                                                    image="stunify.gif"
+                                                    image="stunify.webm"
                                                     descriptionHtml="The aim of Stunify is to connect people with esthetics professionals, this ambitious project will eventually bring together a mobile app and a website, an administration interface is planned for professionals to manage their team, their appointment diary and their cash register."
                                         cardDescription=" The aim of stunify is to connect people with esthetics professionals, this ambitious project will eventually bring together a mobile app and a website"
                                                     :technologies= '["react.svg", "next-js.svg", "tailwind.svg","GgAPI.png", "aws.svg", "mongoDb.svg", "docker.svg"]'
@@ -180,7 +180,7 @@
                                                     <!-- Bugzfoody -->
                                     <ProjectCard 
                                                     title="Bugzfoody" 
-                                                    image="bugzFood.gif"
+                                                    image="bugzFood.webm"
                                                     descriptionHtml="BugzFoody is a French-based e-commerce platform that specializes in the sale of energy powder derived from insects. Committed to transparency and sustainability, the company sources its insect ingredients exclusively from French insect farms. From the procurement of raw materials to packaging and production, the entire process is carried out in France."
                                         cardDescription="A French e-commerce platform offering insect-derived energy powder. They're committed to transparency and sustainability, sourcing from French insect farms and producing everything locally."
                                                     :technologies= '["wordpress.svg", "divi.svg"]'
@@ -424,7 +424,7 @@ export default {
                            window.addEventListener("scroll", function () {
                                const bodyHeight = body.clientHeight - window.innerHeight;
                                const bodyWidth = body.clientWidth;
-                               const timelinePos = (window.pageYOffset / bodyHeight) * 100;
+                               const timelinePos = (window.scrollY / bodyHeight) * 100;
                                scrollTracker.style.width = "" + timelinePos + "%";
 
                                if (bodyWidth > 480) {
@@ -460,30 +460,6 @@ export default {
                                }
                            });
                        },
-                       styleTitle() {
-                           const sectionTitles =
-                               document.querySelectorAll(".section-title");
-                           const titleObserver = new IntersectionObserver(
-                               (entries) => {
-                                   entries.forEach((entry) => {
-                                       entry.target.classList.toggle(
-                                           "shadow",
-                                           !entry.isIntersecting
-                                       );
-                                       entry.target.classList.toggle(
-                                           "animate-title",
-                                           !entry.isIntersecting
-                                       );
-                                   });
-                               },
-                               {
-                                   threshold: 1,
-                               }
-                           );
-                           sectionTitles.forEach((sectionTitle) => {
-                               titleObserver.observe(sectionTitle);
-                           });
-                       },
 
                        increaseTitleSize(element) {
                            if (!element) {
@@ -496,29 +472,18 @@ export default {
                                500;
                            var elementHeight = element.offsetHeight;
                            var scrollTop = document.documentElement.scrollTop;
-
-                           if (window.innerWidth > 480) {
                                var fontSize = 33;
-
-                               if (scrollTop > distanceToTop) {
-                                   fontSize -= (scrollTop - distanceToTop) / elementHeight;
-                               }
-
-                               if (fontSize <= 35) {
-                                   element.style.fontSize = "" + fontSize + "px";
-
-                               }
-                           } else {
-                               fontSize = 33;
-
-                               if (scrollTop > distanceToTop) {
-                                   fontSize -= (scrollTop - distanceToTop) / elementHeight;
-                               }
+                           if (scrollTop > distanceToTop) {
+                               fontSize -= (scrollTop - distanceToTop) / elementHeight;
+                               if (fontSize <= 25) return
+                               console.log('fontSize', fontSize);
+                               } 
 
                                if (fontSize <= 33) {
                                    element.style.fontSize = "" + fontSize + "px";
+                                  
                                }
-                           }
+                           
                        },
                        animateCards() {
                            const cards = document.querySelectorAll(".card");
@@ -603,7 +568,6 @@ export default {
     },
     mounted() {
         this.scrollTracking();
-        this.styleTitle();
         this.animateCards();
         this.observCards()
     },
@@ -643,11 +607,7 @@ main{
         transition: all 300ms;
         background-color: hwb(0 100% 0% / 0.427) ;
     }
-    .animate-title{
-        color:white;
-        background-color: hwb(0 35% 65% / 0.427);
-    }
-    
+   
     #work{
         margin-top: 100px;
     }
@@ -858,6 +818,10 @@ main{
     
         .card {
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%);
+        }
+        .section-title{
+            padding-top: 0.8rem;
+            padding-bottom: 0.6rem;
         }
     }
     
