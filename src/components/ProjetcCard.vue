@@ -49,7 +49,7 @@ export default {
     <!-- card -->
     <div class="card m-3 my-3 border-4 border-white" style="width: 25rem">
       <div class="card-image rounded border border-primary">
-        <video v-if="image.split('.')[1] === 'webm'" style="width:100%" autoplay muted loop controls>
+        <video v-if="image.split('.')[1] === 'webm'" style="width:100%" autoplay muted loop>
         <source :src="require('../assets/' + image)" type="video/webm">
         </video>
         <img v-else :src="require('../assets/' + image)" :alt="'image of' + image" style="width:100%"/>
