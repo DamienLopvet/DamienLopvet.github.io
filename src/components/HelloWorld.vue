@@ -402,21 +402,12 @@ export default {
                                    }, 3000);
                                });
                        },
-                       handleScroll() {
-                           this.scrollpx = window.scrollY;
-                           const sectionTitles =
-                               document.querySelectorAll(".section-title");
-                           sectionTitles.forEach((element) => {
-                               window.addEventListener(
-                                   "scroll",
-                                   this.increaseTitleSize(element)
-                               );
-                           });
-                       },
                        getDate() {
                            let dateNow = new Date();
                            this.date = dateNow.getFullYear();
                        },
+                      
+                     
                        scrollTracking() {
                            const body = document.body,
                                scrollTracker = document.querySelector(".scroll-tracker"),
@@ -460,30 +451,7 @@ export default {
                                }
                            });
                        },
-
-                       increaseTitleSize(element) {
-                           if (!element) {
-                               return;
-                           }
-
-                           var distanceToTop =
-                               window.scrollY +
-                               element.getBoundingClientRect()?.top -
-                               500;
-                           var elementHeight = element.offsetHeight;
-                           var scrollTop = document.documentElement.scrollTop;
-                               var fontSize = 33;
-                           if (scrollTop > distanceToTop) {
-                               fontSize -= (scrollTop - distanceToTop) / elementHeight;
-                               if (fontSize <= 25) return
-                               } 
-
-                               if (fontSize <= 33) {
-                                   element.style.fontSize = "" + fontSize.toFixed(1) + "px";
-                                  console.log(element.style.fontSize)
-                               }
-                           
-                       },
+                     
                        animateCards() {
                            const cards = document.querySelectorAll(".card");
                            const cardObserver = new IntersectionObserver((entries) => {
@@ -562,16 +530,18 @@ export default {
         }
     },
     created() {
-        window.addEventListener("scroll", this.handleScroll);
         this.getDate();
     },
     mounted() {
+        //progression bar
         this.scrollTracking();
+
+        //animaton cards
         this.animateCards();
+
         this.observCards()
     },
     unmounted() {
-        window.removeEventListener("scroll", this.handleScroll);
     },
 };
 </script>
