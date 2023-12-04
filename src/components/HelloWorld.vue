@@ -21,7 +21,7 @@
                                         <div editable="rich">
                                             <p class="lead">
                                                 Mail:
-                                                <a href="mailto:etwincorp@gmail.com" class="link text-primary">etwincorp@gmail.com</a>
+                                                <a href="mailto:mail@lopvet-damien.com" class="link text-primary">mail@lopvet-damien.com</a>
                                                 <br />
                                                 Tel:
                                                 <a href="tel:+41-78-251-95-80 " class="link text-primary">+41.78.251.95.80
