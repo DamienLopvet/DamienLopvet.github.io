@@ -69,6 +69,16 @@
                                     <h2 class="sticky-top w-100 section-title" id="own">
                                             Personal projects
                     </h2>
+                    <!-- MULTIPLE STOPWATCH -->
+                                                  <ProjectCard 
+                                                            title="Ella-maillart" 
+                                                            image="ellaMaillart.jpg"
+                                                            descriptionHtml="This project is about creating interpersonal connections between the inhabitants of a building pool, it uses Next.js to deliver server-side rendered pages (as much as possible). It's a great project that I'm proud to be the only developer on.
+                                                            It is in production and I'm working on it every day. New features like a classified advertisements section are coming soon. It comes with an Admin dashboard to manage the users and the content of the site. "
+                                                cardDescription="is about creating interpersonal connections between the inhabitants of a building pool"
+                                                            :technologies= '["next-js.svg","tailwind.svg","vercel.svg", "mongoDb.svg"]'
+                                                            cardLinkFront="https://www.ella-maillart.com/"
+                                                            />
                       <!-- MULTIPLE STOPWATCH -->
                                               <ProjectCard 
                                                         title="Multiple Stopwatches" 
