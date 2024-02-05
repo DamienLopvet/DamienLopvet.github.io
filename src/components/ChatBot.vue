@@ -35,11 +35,11 @@ export default {
         return {
             countChatMessages: 0,
             chatbulle: chatbulle,
-            chatData: [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show his skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`],
+            chatData: [`Hi, I am the assitant of Mister Damien Lopvet. I am based on the new amazing Mistral AI API, I will try my best to complete the mission provided by my master, please feel free to ask me what you need to know about him.`],
             userInput: null,
             systemMessage: {
                 role: 'system',
-                content: "You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the following information. Personal Data:if they ask for my phone number, just answer : 'located on top left of my portfolio'. email address :'damienlopvet@gmail.com'. age : '43'. Current address : 'Challex', France, it's near the Swiss border. History:I have a 2022 fullstack web developer diploma from Openclassrooms, I worked for a web agency in atlanta last year and I am currently a developer in a start up in Geneva. Skills:I like to code and I am curious about new technologies and different programming languages, I code in javascript with node JS, REACT.JS and vue;JS I use docker, kubernet and AWS. If the user asks if I can reach out to him just ask him to provide some contact info and I will, or he can fullfill the contact form in the footer of this portfolio"
+                content: "You are my personnal assistant here on my portfolio and you are allowed to answer queries related to me or my profile with the following information: Personal Data: if user ask for my phone number, just answer : 'located on top left of my portfolio'. email address :'mail@lopvet-damien.com'. age : '43'. Current address : 'Genève'. History: M.Lopvet as a 2022 fullstack web developer diploma from Openclassrooms, he worked for a web agency in Atlanta last year for 4 month as an intern, then he worked as a developer in a start-up in Geneva for 7 months, currenty he is available for a new challenge. Skills:he like to code and he is curious about new technologies and different programming languages, he codes in javascript with node.JS, React.JS and Vue.JS. he like docker, kubernetes and AWS, he is not good at designing but he worked as a freelance web developer in the past so he can understand and handle clients.he is very interested in developing his skills in cyber security, blockchains and AI programming.  Languages: his mother tongue is French, he has a good English, fluent Spanish and bases of Potuguese.  If the user asks if I can reach out to him just ask him to provide some contact info and I will, or he can fullfill the contact form in the footer of this portfolio . 'Very important'!! : Don't imagine or create any information, just answer the questions as short as possible, for example if someone greets you, you greet them back, that's all. If the answer of the question is not in here, please just answer that you don't know about it. Try to answer the most breifly as possible. "
             },
             chatbotError: '',
             informLongTimeForFirstResponse: ''
@@ -53,7 +53,7 @@ export default {
               
                 if (this.countChatMessages === 2) {
                     this.countChatMessages = 0
-                    this.sendDataToMail()
+                
                 }
             },
             deep: true
@@ -84,25 +84,27 @@ export default {
             e.target.hasAttribute("data-open-modal") && modal.hasAttribute('open') ? this.closeModal() : this.openModal();
             e.target.hasAttribute("data-close-modal") && this.closeModal();
             if (e.target.hasAttribute("data-close-erase-modal")) {
+                this.sendDataToMail()
                 this.closeModal();
                 this.chatData = [`Hi, I am the assitant of Mister Damien Lopvet. He designed me to show he's skills at programming a chatbot and asked me to answer your questions related to his profile. please feel free to ask me what you need to know`]
             }
-
-
-
         },
+
         handleChat() {
+            //disable input field
             const input = document.querySelector('#userInput')
             input.disabled = true
+
             if (this.chatData.length <= 1) this.informLongTimeForFirstResponse = 'First Response could take up to 30 sec to come'
             this.chatData.push(this.userInput)
-            this.userInput = '...'
-            let data_ = this.chatData.map((e) => ({ role: "user", content: e }))
-            data_.push(this.systemMessage)
+            let data_ = [{ role: "user", content: this.userInput }]
+            data_.unshift(this.systemMessage)
             const data = { messages: data_ };
+            console.log(data);
+            this.userInput = '...'
             axios({
                 method: "POST",
-                url: `https://chatbot-whjg.onrender.com/api/message`,
+                url: `${process.env.VUE_APP_CHATBOT_BACKEND_URL}/api/message`,
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -159,7 +161,7 @@ export default {
         axios.get('https://chatbot-whjg.onrender.com/').then(() => {
             console.log('chatbot is up');
         }).catch((e) => console.log(e))
-        //window.addEventListener("beforeunload", this.sendDataToMail());
+        window.addEventListener("beforeunload", this.sendDataToMail());
     }
 
 
@@ -185,7 +187,7 @@ export default {
     z-index: 1000;
     margin-inline: auto 0;
     scale: 0.1;
-    transition: all 300ms;
+    transition: all 100ms;
     background: #343541f5;
     color: #ececf1;
     padding-inline: 0;
@@ -207,7 +209,6 @@ export default {
     float: right;
     margin-right: 5px;
     font-weight: 900;
-    border: 1px solid #3fb27f;
     padding: 5px;
     border-radius: 50%;
 
@@ -264,6 +265,7 @@ form label img {
     all: unset;
     padding-inline: 10px;
     font-size: 0.7rem;
+    cursor:pointer
 }
 
 #chatbotError {

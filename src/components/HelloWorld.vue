@@ -365,6 +365,7 @@ export default {
                            isactive: false,
                            messageSent: false,
                            messageError: false,
+
                        };
                    },
                    methods: {
