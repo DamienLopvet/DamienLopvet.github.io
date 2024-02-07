@@ -178,7 +178,6 @@ export default {
 
 #chatbot_open {
     cursor: pointer;
-    width:2px
 }
 
 .chatbot-dialog {
