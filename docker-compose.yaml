@@ -10,3 +10,5 @@ services:
     stdin_open: true
     tty: true
     command : run serve
+    environment:
+      - VUE_APP_CHATBOT_BACKEND_URL=http://localhost:8030
