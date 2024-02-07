@@ -158,7 +158,7 @@ export default {
         },
     },
     created() {
-        axios.get('https://chatbot-whjg.onrender.com/').then(() => {
+        axios.get(process.env.VUE_APP_CHATBOT_BACKEND_URL).then(() => {
             console.log('chatbot is up');
         }).catch((e) => console.log(e))
         window.addEventListener("beforeunload", this.sendDataToMail());
