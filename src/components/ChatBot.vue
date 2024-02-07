@@ -135,7 +135,10 @@ export default {
         sendDataToMail() {
             let data_ = [...this.chatData]
             data_.shift()
-
+            if (data_.length === 0) {
+                console.log('no data to store');
+                return
+            }
             data_ = ['nouveau chat du Portfolio', ...data_]
             axios.request({
                 method: "POST",
