@@ -91,11 +91,12 @@ export default {
         },
 
         handleChat() {
+            let chat = this.chatData
+            console.log(chat);
             //disable input field
             const input = document.querySelector('#userInput')
             input.disabled = true
 
-            if (this.chatData.length <= 1) this.informLongTimeForFirstResponse = 'First Response could take up to 30 sec to come'
             this.chatData.push(this.userInput)
             let data_ = [{ role: "user", content: this.userInput }]
             data_.unshift(this.systemMessage)
@@ -119,7 +120,6 @@ export default {
                     this.userInput = ''
                     input.disabled = false
                     input.focus()
-                    this.informLongTimeForFirstResponse = ''
                     setTimeout(() => {
 
                         modal.scrollTop = modal.scrollHeight
@@ -129,6 +129,10 @@ export default {
                     input.disabled = false
                     this.userInput = ''
                     this.chatbotError = 'An error occured, please try again'
+                    setTimeout(() => {
+
+                        this.chatbotError =''
+                    }, 5000);
                 });
 
         },
