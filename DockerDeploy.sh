@@ -16,7 +16,7 @@ read -p "Do you want to push to github-pages ? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-echo "push to github pages confirm"
+echo "push to github pages confirmed"
 cd dist
 git init
 git add .
@@ -26,7 +26,8 @@ git add .
 read -p "What is your commit message ? "
 if [[ $REPLY ]]
 then
-git commit -m " $REPLY "
+COMMITMESSAGE=$REPLY
+git commit -m  " $COMMITMESSAGE "
 git push -f https://github.com/DamienLopvet/DamienLopvet.github.io.git master:gh-pages
 cd -
 else
@@ -49,17 +50,8 @@ then
 echo "push to repo confirm";
 
 git add .
-
-# Provide a message for the commit
-
-read -p "What is your commit message ? "
-if [[ $REPLY ]]
-then
-git commit -m " $REPLY "
+git commit -m " $COMMITMESSAGE "
 git push
-else
-
-echo "No commit message provided, action aborted"
 
 fi
 
