@@ -53,7 +53,7 @@ git add .
 git commit -m " $COMMITMESSAGE "
 git push
 
-fi
+
 
 else
   echo "push to repo aborted";
