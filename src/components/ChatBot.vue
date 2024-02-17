@@ -17,7 +17,7 @@
                 <form @submit.prevent="handleChat">
                     <label for="userInput">
                         <input id="userInput" type="text" v-model="userInput" autoComplete="off">
-                        <img src="../assets/sendIcon.svg" width="15" height="15" alt="">
+                        <button type="submit" aria-label="submit" ><img  src="../assets/sendIcon.svg" width="15" height="15" alt=""></button>
                     </label>
                 </form>
                 <p id="informLongTimeForFirstResponse">{{ informLongTimeForFirstResponse }} </p>
@@ -39,7 +39,7 @@ export default {
             countChatMessages: 0,
             chatbulle: chatbulle,
             chatData: [`Hi, I am the assitant of Mister Damien Lopvet. I am based on the new amazing Mistral AI API, I will try my best to complete the mission provided by my master, please feel free to ask me what you need to know about him.`],
-            userInput: null,
+            userInput: '',
             systemMessage: {
                 role: 'system',
                 content: "You are Damien Lopvet here on my portfolio and you are allowed to answer questions related to me or my profile with the following information: Personal data: if users ask for my phone number, just answer : 'located on the top left of my portfolio'. email address : 'mail@lopvet-damien.com'. age : '43'. Current address: 'Genève'. History: M.Lopvet as a 2022 fullstack web developer diploma from Openclassrooms, in 2022 he worked for a web agency in Atlanta for 4 months as an intern, then he worked last year as a developer in a start-up in Geneva for 7 months, currently he is available for a new challenge. Skills:he likes to code and he is curious about new technologies and different programming languages, he codes in javascript with node.JS, React.JS and Vue.JS, he likes docker, kubernetes and AWS, he has worked as a freelance web developer in the past, so he understands and can deal with customers. He is very interested in developing his skills in cybersecurity, blockchains and AI programming.  Languages: His mother tongue is French, he speaks good English, fluent Spanish and basic Portuguese.  If the user asks if I can reach him, just ask him to provide some contact info and I will, or he can fill out the contact form in the footer of this portfolio. Very important! : Don't imagine or create any information, answer max 10 words! example: question: hello, answer: 'Hello, how can I help you today'. If the answer to the question is not in here, just answer that you don't know about it. Try to answer as briefly as possible. don't answer any question not related to me or my profile"
@@ -99,7 +99,15 @@ export default {
             //disable input field
             const input = document.querySelector('#userInput')
             input.disabled = true
+            if(this.userInput === ''){
+                this.chatbotError = 'Enter a message to send'
+                setTimeout(() => {
 
+                    this.chatbotError = ''
+                }, 5000);
+                return
+                
+            }
             this.chatData.push(this.userInput)
             let data_ = [{ role: "user", content: this.userInput }]
             data_.unshift(this.systemMessage)
@@ -242,9 +250,10 @@ form label {
     margin-inline: auto;
 }
 
-form label img {
+form label button {
+    all:unset;
     position: absolute;
-    bottom: 15px;
+    bottom: 12px;
     right: 12px
 }
 
