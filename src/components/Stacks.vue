@@ -61,13 +61,12 @@ export default {
             <div class="row">
                 <div class="col-12">
 
-                    <div class="carousel__wrapper stacks-container" @mouseenter="pauseAnimation"
-                @mouseleave="resumeAnimation">
+                    <div class="carousel__wrapper stacks-container">
                         <div id="technologies-logos" v-for="(image, index) in duplicatedStacks" :key="index"
                             class="carousel__slide stacks-logos d-flex flex-column">
                             <img class="carousel__image" :src="require('../assets/' + image)" width="40" :alt="image"
                                 :aria-label="image.split('.')[0]" />
-                            <span class="text-xs icon-title">{{ image.split('.')[0] }} </span>
+                            <span class="text-xs icon-title pb-2">{{ image.split('.')[0] }} </span>
                         </div>
                        
                     </div>

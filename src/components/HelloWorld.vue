@@ -35,23 +35,14 @@
                                             </p>
                                             <p class="lead">
                                                 I am a curious, passionate, and meticulous developer
-                                                who creates modern and functional websites with
-                                                great attention to detail. I enjoy working with my
-                                                clients to understand their unique needs and deliver
-                                                custom solutions that help them achieve their online
-                                                goals. I specialize in creating websites for small
-                                                and medium sized businesses, startups, and
-                                                individual entrepreneurs. My expertise includes
-                                                responsive website design, search engine
-                                                optimization, security and accessibility. I am also
-                                                familiar with a variety of web technologies
-                                                including React.js, Vue.js, HTML, CSS, JavaScript,
-                                                PHP, and WordPress.
+                                                who creates modern and functional websites. I enjoy working on projects that challenge me 
+                                                and allow me to use my analytics skills and my creativity.
+                                                My expertise includes frontend and backend development, testing, securising and accessibility.
                                             </p>
                                         </div>
                                     </div>
 
-                                    <div class="lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
+                                    <div class="mt-5 lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
                                         <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professional projects</a>
                                         <a class="btn btn-outline-secondary px-4" href="#home" role="button">Personal projects</a>
                                     </div>
@@ -69,14 +60,14 @@
                                     <h2 class="sticky-top w-100 section-title" id="own">
                                             Personal projects
                     </h2>
-                    <!-- MULTIPLE STOPWATCH -->
+                    <!-- ELLA-Maillart -->
                                                   <ProjectCard 
                                                             title="Ella-maillart" 
                                                             image="ellaMaillart.jpg"
                                                             descriptionHtml="This project is about creating interpersonal connections between the inhabitants of a building pool, it uses Next.js to deliver server-side rendered pages (as much as possible). It's a great project that I'm proud to be the only developer on.
                                                             It is in production and I'm working on it every day. New features like a classified advertisements section are coming soon. It comes with an Admin dashboard to manage the users and the content of the site. "
                                                 cardDescription="is about creating interpersonal connections between the inhabitants of a building pool"
-                                                            :technologies= '["next-js.svg","tailwind.svg","s3.svg","vercel.svg", "mongoDb.svg"]'
+                                                            :technologies= '["next-js.svg","tailwind.svg","s3.svg","typescript.svg", "mongoDb.svg"]'
                                                             cardLinkFront="https://www.ella-maillart.com/"
                                                             />
                       <!-- MULTIPLE STOPWATCH -->
@@ -463,82 +454,7 @@ export default {
                            });
                        },
                      
-                       animateCards() {
-                           const cards = document.querySelectorAll(".card");
-                           const cardObserver = new IntersectionObserver((entries) => {
-                               entries.forEach((entry) => {
-                                   if (!entry.isIntersecting) return;
-                                   entry.target.classList.toggle(
-                                       "show",
-                                       entry.isIntersecting
-                                   );
-                               });
-                           }, {});
-                           cards.forEach((card) => {
-                               cardObserver.observe(card);
-                           });
-                       },
-                       observCards() {
-                           var numSteps = 200.0;
-                           var boxes;
-                           var prevRatio = 0.1;
-                           // On met l'ensemble en place.
-
-                           window.addEventListener("load", function () {
-                               boxes = document.querySelectorAll(".card-container")
-
-                createObserver();
-            }, false);
-
-            function createObserver() {
-                var observer;
-
-                var options = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: buildThresholdList()
-                };
-
-                observer = new IntersectionObserver(handleIntersect, options);
-                boxes.forEach(function (box) {
-                    observer.observe(box);
-                })
-            }
-
-            function buildThresholdList() {
-                var thresholds = [];
-
-                for (var i = 1.0; i <= numSteps; i++) {
-                    var ratio = i / numSteps;
-                    thresholds.push(ratio);
-                }
-
-                thresholds.push(0);
-                return thresholds;
-            }
-
-            function handleIntersect(entries) {
-                entries.forEach(function (entry) {
-                    let growingBackgroundBox = entry.target.querySelector('.growing-box')
-                    let card = entry.target.querySelector('.card')
-                    if (entry.intersectionRatio > prevRatio && growingBackgroundBox) {
-
-                        // growingBackgroundBox.style.width = `${entry.intersectionRatio * 100}%  `;
-                        // growingBackgroundBox.style.height = `${entry.intersectionRatio * 100}%  `;
-                    }
-                    
-
-                    if (entry.intersectionRatio === 1) {
-                        card.style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 10%)";
-                    } else {
-                        card.style.boxShadow = "0 10px 15px -3px rgb(0 0 0 / 0%)";
-                        
-                    }
-
-                });
-            }
-
-        }
+       
     },
     created() {
         this.getDate();
@@ -547,10 +463,6 @@ export default {
         //progression bar
         this.scrollTracking();
 
-        //animaton cards
-        this.animateCards();
-
-        this.observCards()
     },
     unmounted() {
     },
@@ -694,9 +606,7 @@ main{
     }
     
     /* ANIMATIONS */
-    .container {
-        overflow: hidden;
-    }
+  
     
     .heroimg-container {
         height: 400px;
@@ -712,21 +622,6 @@ main{
             aspect-ratio: 1/1;
         }
     
-        .card-container:nth-child(even) + .card{
-            translate: 300px;
-            opacity: 0;
-            transition: all 400ms ease-in-out;
-        }
-        .card-container:nth-child(odd) + .card{
-            translate: -300px;
-            opacity: 0;
-            transition: all 400ms ease-in-out;
-        }
-    
-        .show {
-            translate: 0!important;
-            opacity: 1;
-        }
     }
     
     .heroimg {
@@ -808,7 +703,6 @@ main{
     
     .card-container {
         position: relative;
-        background-color: transparent !important;
         z-index: 1
     }
     
