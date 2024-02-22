@@ -647,7 +647,7 @@ main{
     
     .scroll-tracker {
         position: fixed;
-        height: 4px;
+        height: 2px;
         inset: 0 0 auto;
         background-color: #42b983;
         z-index: 1030;
