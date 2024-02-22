@@ -41,11 +41,11 @@
                                             </p>
                                         </div>
                                     </div>
-
+<!-- 
                                     <div class="mt-5 lc-block d-grid gap-2 d-md-flex justify-content-sm-center justify-content-lg-start">
                                         <a class="btn btn-primary px-4 me-md-2" href="#work" role="button">Professional projects</a>
                                         <a class="btn btn-outline-secondary px-4" href="#home" role="button">Personal projects</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                             />
                                        
                                         <!-- GROUPOMANIA -->
-                                            <ProjectCard 
+                                            <!-- <ProjectCard 
                                                 title="Groupomania" 
                                                 image="groupomania.webm"
                                                 descriptionHtml='This is the big Project of the training I did at
@@ -128,7 +128,7 @@
                                                 :technologies= '["node.svg", "sql.svg", "react.svg", "swagger.svg", "docker.svg"]'
                                                 cardLinkFront="https://etwincorp.com/frontestG"
                                                 cardLinkBack="https://github.com/DamienLopvet/Groupomania-frontend"
-                                                />
+                                                /> -->
                                                       <!--FACE RECOGNITION-->  
                                             <ProjectCard 
                                                 title="Face recognition" 

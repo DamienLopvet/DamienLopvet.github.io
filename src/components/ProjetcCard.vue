@@ -58,13 +58,13 @@ export default {
 					{{ cardDescription }}
 				</p>
 				<hr class="d-block d-sm-none" />
-				<div class="card-logos my-sm-4 text-info d-flex flex-row justify-content-center flex-wrap gap-3">
+				<div class="card-logos my-2 my-sm-4 text-info d-flex flex-row justify-content-center flex-wrap gap-3">
 					<div v-for="(image, index) in technologies" :key="index" class="d-flex gap-2 flex-column justify-content-end align-items-center technologies-logos">
 						<img :src="require('../assets/' + image)" width="40" alt="node.js" :title="image.split('.')[0]" />
 						<span class="text-xs icon-title">{{ image.split(".")[0] }} </span>
 					</div>
 				</div>
-				<div class="d-flex flex-column">
+				<div class="d-flex flex-column mt-2">
 					<a :href="cardLinkFront" target="_blank" class="btn btn-primary px-3 mx-auto mx-sm-0 my-1 w-sm-100">Try the app</a>
 					<a :href="cardLinkBack" v-if="cardLinkBack" target="_blank" class="btn btn-outline-primary mx-auto mx-sm-0 my-1 w-sm-100">See the code</a>
 				</div>
