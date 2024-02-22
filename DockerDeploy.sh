@@ -16,7 +16,7 @@ read -p "Do you want to push to github-pages ? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-echo "push to github pages confirmed"
+echo "------------------------------push to github pages confirmed------------------------------"
 cd dist
 git init
 git add .
@@ -32,12 +32,12 @@ git push -f https://github.com/DamienLopvet/DamienLopvet.github.io.git master:gh
 cd -
 else
 
-echo "No commit message provided, action aborted"
+echo "------------------------------No commit message provided, action aborted------------------------------"
 
 fi
 else
 
-  echo "push to gihub pages aborted";
+  echo "------------------------------push to gihub pages aborted------------------------------";
 
 fi
 
@@ -58,8 +58,13 @@ git push
 else
   echo "push to repo aborted";
 fi
+#remove deployed image :
+echo "------------------------------removing deployed image------------------------------"
+docker rmi $(docker images 'portfolio:deploy' -a -q)
 
-echo "end of script"
+
+
+echo "------------------------------end of script------------------------------"
 
 
 # Just run : bash DockerDeploy.sh
